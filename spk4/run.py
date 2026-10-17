@@ -54,13 +54,13 @@ summary: list[str] = []
 
 def log(kind: str, **fields: Any) -> None:
     OUT.mkdir(parents=True, exist_ok=True)
-    with (OUT / "log.jsonl").open("a") as f:
+    with (OUT / "log.jsonl").open("a", encoding="utf-8") as f:
         f.write(json.dumps({"t": time.strftime("%H:%M:%S"), "kind": kind, **fields}) + "\n")
 
 
 def save(name: str, obj: Any) -> None:
     OUT.mkdir(parents=True, exist_ok=True)
-    (OUT / name).write_text(json.dumps(obj, indent=2) + "\n")
+    (OUT / name).write_text(json.dumps(obj, indent=2) + "\n", encoding="utf-8")
 
 
 def say(text: str) -> None:
@@ -73,7 +73,7 @@ def verdict(exp: str, result: str, evidence: str) -> None:
     summary.append(line)
     say(line)
     OUT.mkdir(parents=True, exist_ok=True)
-    (OUT / "summary.md").write_text(f"# SPK-4 run {RUN}\n\n" + "\n".join(summary) + "\n")
+    (OUT / "summary.md").write_text(f"# SPK-4 run {RUN}\n\n" + "\n".join(summary) + "\n", encoding="utf-8")
 
 
 def ask(text: str) -> None:
@@ -223,19 +223,20 @@ class Git:
         basic = base64.b64encode(f"x-access-token:{token()}".encode()).decode()
         pairs = [
             ("credential.helper", ""),
-            ("core.hooksPath", str(self.no_hooks)),
+            ("core.hooksPath", self.no_hooks.as_posix()),
             ("http.https://github.com/.extraHeader", f"AUTHORIZATION: basic {basic}"),
             ("user.name", "grindstone-spk4"),
             ("user.email", "spk4@grindstone.invalid"),
         ]
         env = {k: v for k, v in os.environ.items() if not k.startswith("GRINDSTONE_")}
-        env.update({"GIT_CONFIG_NOSYSTEM": "1", "GIT_TERMINAL_PROMPT": "0", "GIT_CONFIG_COUNT": str(len(pairs))})
+        # System config stays on: Git for Windows keeps its TLS settings there.
+        env.update({"GIT_TERMINAL_PROMPT": "0", "GIT_CONFIG_COUNT": str(len(pairs))})
         for i, (k, v) in enumerate(pairs):
             env[f"GIT_CONFIG_KEY_{i}"], env[f"GIT_CONFIG_VALUE_{i}"] = k, v
         return env
 
     def run(self, cwd: Path | None, *args: str) -> str:
-        res = subprocess.run(["git", *args], cwd=cwd, env=self.env(), capture_output=True, text=True)
+        res = subprocess.run(["git", *args], cwd=cwd, env=self.env(), capture_output=True, text=True, encoding="utf-8", errors="replace")
         log("git", args=list(args), code=res.returncode, stderr=res.stderr.strip()[-500:])
         if res.returncode:
             sys.exit(f"git {' '.join(args)} failed: {res.stderr.strip()}")
@@ -249,7 +250,7 @@ class Git:
         """Commit a change to spk4/<run>.txt on `branch`, push it to GitHub, return the SHA."""
         f = self.work / "spk4" / f"run-{RUN}-{branch.rsplit('/', 1)[-1]}.txt"
         f.parent.mkdir(exist_ok=True)
-        with f.open("a") as fh:
+        with f.open("a", encoding="utf-8") as fh:
             fh.write(f"{note} {time.time()}\n")
         self.run(self.work, "add", str(f))
         self.run(self.work, "commit", "--quiet", "-m", f"test: SPK-4 {note}")
@@ -312,6 +313,9 @@ def e1(g: Git) -> None:
         "context_256": set_status(sha, "pending", "x", "c" * 256)[0],
     }
     save("e1-limits.json", lim)
+    # Settle the throwaway contexts: a pending optional status reads as `unstable`, not `clean`.
+    set_status(sha, "success", "x", "spk4/limits")
+    set_status(sha, "success", "x", "c" * 255)
     s, body = set_status(sha, "success", "SPK-4 e1: verified by the App")
     creator = body.get("creator", {}) if isinstance(body, dict) else {}
     after = pr_state(n, "clean")["mergeable_state"]
@@ -464,7 +468,8 @@ def e8(g: Git) -> None:
                          (g.mirror / "hooks", ("pre-receive", "update", "post-receive", "reference-transaction", "pre-push"))):
         for name in names:
             path = where / name
-            path.write_text(hook.format(m=g.markers, name=f"{where.parent.name}-{name}"))
+            # LF endings and forward slashes, so Git for Windows' sh can run them too.
+            path.write_text(hook.format(m=g.markers.as_posix(), name=f"{where.parent.name}-{name}"), newline="\n")
             path.chmod(0o755)
             planted.append(f"{where.parent.name}/{name}")
     branch = f"spk4/{RUN}-e8"
@@ -476,7 +481,7 @@ def e8(g: Git) -> None:
     g.run(g.work, "commit", "--quiet", "-m", "test: SPK-4 e8 push without hooks")
     sha = g.run(g.work, "rev-parse", "HEAD")
     # Private clone -> bare mirror: the receiving side's hooks are disabled through --receive-pack.
-    g.run(g.work, "push", "--quiet", f"--receive-pack=git -c core.hooksPath={g.no_hooks} receive-pack",
+    g.run(g.work, "push", "--quiet", f"--receive-pack=git -c core.hooksPath={g.no_hooks.as_posix()} receive-pack",
           "origin", f"HEAD:refs/heads/{branch}")
     # Bare mirror -> GitHub with the installation token.
     g.run(g.mirror, "push", "--quiet", "https://github.com/" + REPO + ".git", f"refs/heads/{branch}:refs/heads/{branch}")
