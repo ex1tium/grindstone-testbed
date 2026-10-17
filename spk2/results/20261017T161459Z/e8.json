@@ -1,0 +1,31 @@
+{
+  "steps_while_parked": [
+    {
+      "function_id": 1,
+      "function_name": "DBOS.setEvent",
+      "output": null,
+      "error": null,
+      "child_workflow_id": null,
+      "started_at_epoch_ms": 1792253788513,
+      "completed_at_epoch_ms": 1792253788525
+    },
+    {
+      "function_id": 3,
+      "function_name": "DBOS.sleep",
+      "output": 1792257388.550157,
+      "error": null,
+      "child_workflow_id": null,
+      "started_at_epoch_ms": 1792253788545,
+      "completed_at_epoch_ms": 1792253788550
+    }
+  ],
+  "before": {
+    "e8-a": "PENDING",
+    "e8-b": "PENDING",
+    "e8-c": "PENDING"
+  },
+  "versions": [
+    "v2",
+    "v1"
+  ]
+}

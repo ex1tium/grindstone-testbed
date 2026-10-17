@@ -1,0 +1,917 @@
+16:15:00 [    INFO] (dbos:_dbos.py:549) Initializing DBOS (v3.3.0)
+16:15:00 [    INFO] (dbos:_dbos.py:632) Executor ID: local
+16:15:00 [    INFO] (dbos:_dbos.py:633) Application version: v1
+16:15:00 [    INFO] (dbos:_dbos.py:634) Application name: spk2
+16:15:00 [    INFO] (dbos:_sys_db.py:694) Initializing DBOS system database with URL: postgresql://spk2:***@127.0.0.1:5433/spk2 (schema: dbos)
+16:15:00 [    INFO] (dbos:_sys_db.py:702) DBOS system database engine parameters: {'connect_args': {'application_name': 'dbos_transact', 'connect_timeout': 10}, 'pool_timeout': 30, 'max_overflow': 0, 'pool_size': 20, 'pool_pre_ping': True}
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 1
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 2
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 3
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 4
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 5
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 6
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 7
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 8
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 9
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 10
+16:15:00 [    INFO] (dbos:_migration.py:286) Migration 10 skipped, primary key already exists
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 11
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 12
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 13
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 14
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 15
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 16
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 17
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 18
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 19
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 20
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 21
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 22
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 23
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 24
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 25
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 26
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 27
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 28
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 29
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 30
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 31
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 32
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 33
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 34
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 35
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 36
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 37
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 38
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 39
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 40
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 41
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 42
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 43
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 44
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 45
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 46
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 47
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 100
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 101
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 102
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 103
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 104
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 105
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 106
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 107
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 108
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 109
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 110
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 111
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 112
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 113
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 114
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 115
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 116
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 117
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 118
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 119
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 120
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 121
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 122
+16:15:00 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 123
+16:15:00 [    INFO] (dbos:_dbos.py:720) No workflows to recover from application version v1
+16:15:00 [    INFO] (dbos:_dbos.py:831) DBOS launched!
+16:15:00 [    INFO] (dbos:_dbos.py:839) To view and manage workflows, connect to DBOS Conductor at: https://console.dbos.dev/self-host?appname=spk2
+16:15:00 [    INFO] (dbos:_queue.py:969) Listening to 0 queues:
+16:15:00 [    INFO] (dbos:_dbos.py:1057) Registered and listening to new queue:
+16:15:00 [    INFO] (dbos:_queue.py:944) Queue: writing (concurrency=1)
+16:15:00 [    INFO] (dbos:_dbos.py:1057) Registered and listening to new queue:
+16:15:00 [    INFO] (dbos:_queue.py:944) Queue: readonly (concurrency=2)
+16:15:01 [    INFO] (dbos:_dbos.py:549) Initializing DBOS (v3.3.0)
+16:15:01 [    INFO] (dbos:_dbos.py:632) Executor ID: local
+16:15:01 [    INFO] (dbos:_dbos.py:633) Application version: v1
+16:15:01 [    INFO] (dbos:_dbos.py:634) Application name: spk2
+16:15:01 [    INFO] (dbos:_sys_db.py:694) Initializing DBOS system database with URL: postgresql://spk2:***@127.0.0.1:5433/spk2 (schema: dbos)
+16:15:01 [    INFO] (dbos:_sys_db.py:702) DBOS system database engine parameters: {'connect_args': {'application_name': 'dbos_transact', 'connect_timeout': 10}, 'pool_timeout': 30, 'max_overflow': 0, 'pool_size': 20, 'pool_pre_ping': True}
+16:15:01 [    INFO] (dbos:_dbos.py:716) Recovering 1 workflows from application version v1
+16:15:01 [    INFO] (dbos:_dbos.py:831) DBOS launched!
+16:15:01 [    INFO] (dbos:_dbos.py:839) To view and manage workflows, connect to DBOS Conductor at: https://console.dbos.dev/self-host?appname=spk2
+16:15:01 [    INFO] (dbos:_queue.py:969) Listening to 2 queues:
+16:15:01 [    INFO] (dbos:_queue.py:944) Queue: writing (concurrency=1)
+16:15:01 [    INFO] (dbos:_queue.py:944) Queue: readonly (concurrency=2)
+16:15:02 [    INFO] (dbos:_queue.py:907) Stopping queue manager, joining all worker threads...
+16:15:03 [    INFO] (dbos:_dbos.py:451) DBOS successfully shut down
+16:15:03 [    INFO] (dbos:_dbos.py:549) Initializing DBOS (v3.3.0)
+16:15:03 [    INFO] (dbos:_dbos.py:632) Executor ID: local
+16:15:03 [    INFO] (dbos:_dbos.py:633) Application version: v1
+16:15:03 [    INFO] (dbos:_dbos.py:634) Application name: spk2
+16:15:03 [    INFO] (dbos:_sys_db.py:694) Initializing DBOS system database with URL: postgresql://spk2:***@127.0.0.1:5433/spk2 (schema: dbos)
+16:15:03 [    INFO] (dbos:_sys_db.py:702) DBOS system database engine parameters: {'connect_args': {'application_name': 'dbos_transact', 'connect_timeout': 10}, 'pool_timeout': 30, 'max_overflow': 0, 'pool_size': 20, 'pool_pre_ping': True}
+16:15:03 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 1
+16:15:03 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 2
+16:15:03 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 3
+16:15:03 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 4
+16:15:03 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 5
+16:15:03 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 6
+16:15:03 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 7
+16:15:03 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 8
+16:15:03 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 9
+16:15:03 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 10
+16:15:03 [    INFO] (dbos:_migration.py:286) Migration 10 skipped, primary key already exists
+16:15:03 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 11
+16:15:03 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 12
+16:15:03 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 13
+16:15:03 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 14
+16:15:03 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 15
+16:15:03 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 16
+16:15:03 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 17
+16:15:03 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 18
+16:15:03 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 19
+16:15:03 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 20
+16:15:03 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 21
+16:15:03 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 22
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 23
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 24
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 25
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 26
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 27
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 28
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 29
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 30
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 31
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 32
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 33
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 34
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 35
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 36
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 37
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 38
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 39
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 40
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 41
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 42
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 43
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 44
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 45
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 46
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 47
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 100
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 101
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 102
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 103
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 104
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 105
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 106
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 107
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 108
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 109
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 110
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 111
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 112
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 113
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 114
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 115
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 116
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 117
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 118
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 119
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 120
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 121
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 122
+16:15:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 123
+16:15:04 [    INFO] (dbos:_dbos.py:720) No workflows to recover from application version v1
+16:15:04 [    INFO] (dbos:_dbos.py:831) DBOS launched!
+16:15:04 [    INFO] (dbos:_dbos.py:839) To view and manage workflows, connect to DBOS Conductor at: https://console.dbos.dev/self-host?appname=spk2
+16:15:04 [    INFO] (dbos:_queue.py:969) Listening to 0 queues:
+16:15:04 [    INFO] (dbos:_dbos.py:1057) Registered and listening to new queue:
+16:15:04 [    INFO] (dbos:_queue.py:944) Queue: writing (concurrency=1)
+16:15:04 [    INFO] (dbos:_dbos.py:1057) Registered and listening to new queue:
+16:15:04 [    INFO] (dbos:_queue.py:944) Queue: readonly (concurrency=2)
+16:15:05 [    INFO] (dbos:_dbos.py:549) Initializing DBOS (v3.3.0)
+16:15:05 [    INFO] (dbos:_dbos.py:632) Executor ID: local
+16:15:05 [    INFO] (dbos:_dbos.py:633) Application version: v1
+16:15:05 [    INFO] (dbos:_dbos.py:634) Application name: spk2
+16:15:05 [    INFO] (dbos:_sys_db.py:694) Initializing DBOS system database with URL: postgresql://spk2:***@127.0.0.1:5433/spk2 (schema: dbos)
+16:15:05 [    INFO] (dbos:_sys_db.py:702) DBOS system database engine parameters: {'connect_args': {'application_name': 'dbos_transact', 'connect_timeout': 10}, 'pool_timeout': 30, 'max_overflow': 0, 'pool_size': 20, 'pool_pre_ping': True}
+16:15:05 [    INFO] (dbos:_dbos.py:716) Recovering 1 workflows from application version v1
+16:15:05 [    INFO] (dbos:_dbos.py:831) DBOS launched!
+16:15:05 [    INFO] (dbos:_dbos.py:839) To view and manage workflows, connect to DBOS Conductor at: https://console.dbos.dev/self-host?appname=spk2
+16:15:05 [    INFO] (dbos:_queue.py:969) Listening to 2 queues:
+16:15:05 [    INFO] (dbos:_queue.py:944) Queue: writing (concurrency=1)
+16:15:05 [    INFO] (dbos:_queue.py:944) Queue: readonly (concurrency=2)
+16:15:12 [    INFO] (dbos:_dbos.py:549) Initializing DBOS (v3.3.0)
+16:15:12 [    INFO] (dbos:_dbos.py:632) Executor ID: local
+16:15:12 [    INFO] (dbos:_dbos.py:633) Application version: v1
+16:15:12 [    INFO] (dbos:_dbos.py:634) Application name: spk2
+16:15:12 [    INFO] (dbos:_sys_db.py:694) Initializing DBOS system database with URL: postgresql://spk2:***@127.0.0.1:5433/spk2 (schema: dbos)
+16:15:12 [    INFO] (dbos:_sys_db.py:702) DBOS system database engine parameters: {'connect_args': {'application_name': 'dbos_transact', 'connect_timeout': 10}, 'pool_timeout': 30, 'max_overflow': 0, 'pool_size': 20, 'pool_pre_ping': True}
+16:15:12 [    INFO] (dbos:_dbos.py:716) Recovering 1 workflows from application version v1
+16:15:12 [    INFO] (dbos:_dbos.py:831) DBOS launched!
+16:15:12 [    INFO] (dbos:_dbos.py:839) To view and manage workflows, connect to DBOS Conductor at: https://console.dbos.dev/self-host?appname=spk2
+16:15:12 [    INFO] (dbos:_queue.py:969) Listening to 2 queues:
+16:15:12 [    INFO] (dbos:_queue.py:944) Queue: writing (concurrency=1)
+16:15:12 [    INFO] (dbos:_queue.py:944) Queue: readonly (concurrency=2)
+16:15:13 [    INFO] (dbos:_queue.py:907) Stopping queue manager, joining all worker threads...
+16:15:13 [    INFO] (dbos:_dbos.py:451) DBOS successfully shut down
+16:15:14 [    INFO] (dbos:_dbos.py:549) Initializing DBOS (v3.3.0)
+16:15:14 [    INFO] (dbos:_dbos.py:632) Executor ID: local
+16:15:14 [    INFO] (dbos:_dbos.py:633) Application version: v1
+16:15:14 [    INFO] (dbos:_dbos.py:634) Application name: spk2
+16:15:14 [    INFO] (dbos:_sys_db.py:694) Initializing DBOS system database with URL: postgresql://spk2:***@127.0.0.1:5433/spk2 (schema: dbos)
+16:15:14 [    INFO] (dbos:_sys_db.py:702) DBOS system database engine parameters: {'connect_args': {'application_name': 'dbos_transact', 'connect_timeout': 10}, 'pool_timeout': 30, 'max_overflow': 0, 'pool_size': 20, 'pool_pre_ping': True}
+16:15:14 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 1
+16:15:14 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 2
+16:15:14 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 3
+16:15:14 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 4
+16:15:14 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 5
+16:15:14 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 6
+16:15:14 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 7
+16:15:14 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 8
+16:15:14 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 9
+16:15:14 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 10
+16:15:14 [    INFO] (dbos:_migration.py:286) Migration 10 skipped, primary key already exists
+16:15:14 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 11
+16:15:14 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 12
+16:15:14 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 13
+16:15:14 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 14
+16:15:14 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 15
+16:15:14 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 16
+16:15:14 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 17
+16:15:14 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 18
+16:15:14 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 19
+16:15:14 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 20
+16:15:14 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 21
+16:15:14 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 22
+16:15:14 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 23
+16:15:14 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 24
+16:15:14 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 25
+16:15:14 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 26
+16:15:14 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 27
+16:15:14 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 28
+16:15:14 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 29
+16:15:15 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 30
+16:15:15 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 31
+16:15:15 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 32
+16:15:15 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 33
+16:15:15 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 34
+16:15:15 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 35
+16:15:15 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 36
+16:15:15 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 37
+16:15:15 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 38
+16:15:15 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 39
+16:15:15 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 40
+16:15:15 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 41
+16:15:15 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 42
+16:15:15 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 43
+16:15:15 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 44
+16:15:15 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 45
+16:15:15 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 46
+16:15:15 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 47
+16:15:15 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 100
+16:15:15 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 101
+16:15:15 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 102
+16:15:15 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 103
+16:15:15 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 104
+16:15:15 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 105
+16:15:15 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 106
+16:15:15 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 107
+16:15:15 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 108
+16:15:15 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 109
+16:15:15 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 110
+16:15:15 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 111
+16:15:15 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 112
+16:15:15 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 113
+16:15:15 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 114
+16:15:15 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 115
+16:15:15 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 116
+16:15:15 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 117
+16:15:15 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 118
+16:15:15 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 119
+16:15:15 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 120
+16:15:15 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 121
+16:15:15 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 122
+16:15:15 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 123
+16:15:15 [    INFO] (dbos:_dbos.py:720) No workflows to recover from application version v1
+16:15:15 [    INFO] (dbos:_dbos.py:831) DBOS launched!
+16:15:15 [    INFO] (dbos:_dbos.py:839) To view and manage workflows, connect to DBOS Conductor at: https://console.dbos.dev/self-host?appname=spk2
+16:15:15 [    INFO] (dbos:_queue.py:969) Listening to 0 queues:
+16:15:15 [    INFO] (dbos:_dbos.py:1057) Registered and listening to new queue:
+16:15:15 [    INFO] (dbos:_queue.py:944) Queue: writing (concurrency=1)
+16:15:15 [    INFO] (dbos:_dbos.py:1057) Registered and listening to new queue:
+16:15:15 [    INFO] (dbos:_queue.py:944) Queue: readonly (concurrency=2)
+16:15:16 [    INFO] (dbos:_dbos.py:549) Initializing DBOS (v3.3.0)
+16:15:16 [    INFO] (dbos:_dbos.py:632) Executor ID: local
+16:15:16 [    INFO] (dbos:_dbos.py:633) Application version: v1
+16:15:16 [    INFO] (dbos:_dbos.py:634) Application name: spk2
+16:15:16 [    INFO] (dbos:_sys_db.py:694) Initializing DBOS system database with URL: postgresql://spk2:***@127.0.0.1:5433/spk2 (schema: dbos)
+16:15:16 [    INFO] (dbos:_sys_db.py:702) DBOS system database engine parameters: {'connect_args': {'application_name': 'dbos_transact', 'connect_timeout': 10}, 'pool_timeout': 30, 'max_overflow': 0, 'pool_size': 20, 'pool_pre_ping': True}
+16:15:16 [    INFO] (dbos:_dbos.py:716) Recovering 2 workflows from application version v1
+16:15:16 [    INFO] (dbos:_dbos.py:831) DBOS launched!
+16:15:16 [    INFO] (dbos:_dbos.py:839) To view and manage workflows, connect to DBOS Conductor at: https://console.dbos.dev/self-host?appname=spk2
+16:15:16 [    INFO] (dbos:_queue.py:969) Listening to 2 queues:
+16:15:16 [    INFO] (dbos:_queue.py:944) Queue: writing (concurrency=1)
+16:15:16 [    INFO] (dbos:_queue.py:944) Queue: readonly (concurrency=2)
+16:15:22 [    INFO] (dbos:_dbos.py:549) Initializing DBOS (v3.3.0)
+16:15:22 [    INFO] (dbos:_dbos.py:632) Executor ID: local
+16:15:22 [    INFO] (dbos:_dbos.py:633) Application version: v1
+16:15:22 [    INFO] (dbos:_dbos.py:634) Application name: spk2
+16:15:22 [    INFO] (dbos:_sys_db.py:694) Initializing DBOS system database with URL: postgresql://spk2:***@127.0.0.1:5433/spk2 (schema: dbos)
+16:15:22 [    INFO] (dbos:_sys_db.py:702) DBOS system database engine parameters: {'connect_args': {'application_name': 'dbos_transact', 'connect_timeout': 10}, 'pool_timeout': 30, 'max_overflow': 0, 'pool_size': 20, 'pool_pre_ping': True}
+16:15:23 [    INFO] (dbos:_dbos.py:716) Recovering 2 workflows from application version v1
+16:15:23 [    INFO] (dbos:_dbos.py:831) DBOS launched!
+16:15:23 [    INFO] (dbos:_dbos.py:839) To view and manage workflows, connect to DBOS Conductor at: https://console.dbos.dev/self-host?appname=spk2
+16:15:23 [    INFO] (dbos:_queue.py:969) Listening to 2 queues:
+16:15:23 [    INFO] (dbos:_queue.py:944) Queue: writing (concurrency=1)
+16:15:23 [    INFO] (dbos:_queue.py:944) Queue: readonly (concurrency=2)
+16:15:25 [    INFO] (dbos:_queue.py:907) Stopping queue manager, joining all worker threads...
+16:15:25 [    INFO] (dbos:_dbos.py:451) DBOS successfully shut down
+16:15:26 [    INFO] (dbos:_dbos.py:549) Initializing DBOS (v3.3.0)
+16:15:26 [    INFO] (dbos:_dbos.py:632) Executor ID: local
+16:15:26 [    INFO] (dbos:_dbos.py:633) Application version: v1
+16:15:26 [    INFO] (dbos:_dbos.py:634) Application name: spk2
+16:15:26 [    INFO] (dbos:_sys_db.py:694) Initializing DBOS system database with URL: postgresql://spk2:***@127.0.0.1:5433/spk2 (schema: dbos)
+16:15:26 [    INFO] (dbos:_sys_db.py:702) DBOS system database engine parameters: {'connect_args': {'application_name': 'dbos_transact', 'connect_timeout': 10}, 'pool_timeout': 30, 'max_overflow': 0, 'pool_size': 20, 'pool_pre_ping': True}
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 1
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 2
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 3
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 4
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 5
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 6
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 7
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 8
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 9
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 10
+16:15:26 [    INFO] (dbos:_migration.py:286) Migration 10 skipped, primary key already exists
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 11
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 12
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 13
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 14
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 15
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 16
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 17
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 18
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 19
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 20
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 21
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 22
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 23
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 24
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 25
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 26
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 27
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 28
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 29
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 30
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 31
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 32
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 33
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 34
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 35
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 36
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 37
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 38
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 39
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 40
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 41
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 42
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 43
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 44
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 45
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 46
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 47
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 100
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 101
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 102
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 103
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 104
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 105
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 106
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 107
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 108
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 109
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 110
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 111
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 112
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 113
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 114
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 115
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 116
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 117
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 118
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 119
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 120
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 121
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 122
+16:15:26 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 123
+16:15:26 [    INFO] (dbos:_dbos.py:720) No workflows to recover from application version v1
+16:15:26 [    INFO] (dbos:_dbos.py:831) DBOS launched!
+16:15:26 [    INFO] (dbos:_dbos.py:839) To view and manage workflows, connect to DBOS Conductor at: https://console.dbos.dev/self-host?appname=spk2
+16:15:26 [    INFO] (dbos:_queue.py:969) Listening to 0 queues:
+16:15:26 [    INFO] (dbos:_dbos.py:1057) Registered and listening to new queue:
+16:15:26 [    INFO] (dbos:_queue.py:944) Queue: writing (concurrency=1)
+16:15:26 [    INFO] (dbos:_dbos.py:1057) Registered and listening to new queue:
+16:15:26 [    INFO] (dbos:_queue.py:944) Queue: readonly (concurrency=2)
+16:15:38 [    INFO] (dbos:_dbos.py:549) Initializing DBOS (v3.3.0)
+16:15:38 [    INFO] (dbos:_dbos.py:632) Executor ID: local
+16:15:38 [    INFO] (dbos:_dbos.py:633) Application version: v1
+16:15:38 [    INFO] (dbos:_dbos.py:634) Application name: spk2
+16:15:38 [    INFO] (dbos:_sys_db.py:694) Initializing DBOS system database with URL: postgresql://spk2:***@127.0.0.1:5433/spk2 (schema: dbos)
+16:15:38 [    INFO] (dbos:_sys_db.py:702) DBOS system database engine parameters: {'connect_args': {'application_name': 'dbos_transact', 'connect_timeout': 10}, 'pool_timeout': 30, 'max_overflow': 0, 'pool_size': 20, 'pool_pre_ping': True}
+16:15:38 [    INFO] (dbos:_dbos.py:716) Recovering 1 workflows from application version v1
+16:15:38 [    INFO] (dbos:_dbos.py:831) DBOS launched!
+16:15:38 [    INFO] (dbos:_dbos.py:839) To view and manage workflows, connect to DBOS Conductor at: https://console.dbos.dev/self-host?appname=spk2
+16:15:38 [    INFO] (dbos:_queue.py:969) Listening to 2 queues:
+16:15:38 [    INFO] (dbos:_queue.py:944) Queue: readonly (concurrency=2)
+16:15:38 [    INFO] (dbos:_queue.py:944) Queue: writing (concurrency=1)
+16:15:54 [    INFO] (dbos:_queue.py:907) Stopping queue manager, joining all worker threads...
+16:15:54 [    INFO] (dbos:_dbos.py:451) DBOS successfully shut down
+16:15:55 [    INFO] (dbos:_dbos.py:549) Initializing DBOS (v3.3.0)
+16:15:55 [    INFO] (dbos:_dbos.py:632) Executor ID: local
+16:15:55 [    INFO] (dbos:_dbos.py:633) Application version: v1
+16:15:55 [    INFO] (dbos:_dbos.py:634) Application name: spk2
+16:15:55 [    INFO] (dbos:_sys_db.py:694) Initializing DBOS system database with URL: postgresql://spk2:***@127.0.0.1:5433/spk2 (schema: dbos)
+16:15:55 [    INFO] (dbos:_sys_db.py:702) DBOS system database engine parameters: {'connect_args': {'application_name': 'dbos_transact', 'connect_timeout': 10}, 'pool_timeout': 30, 'max_overflow': 0, 'pool_size': 20, 'pool_pre_ping': True}
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 1
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 2
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 3
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 4
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 5
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 6
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 7
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 8
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 9
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 10
+16:15:55 [    INFO] (dbos:_migration.py:286) Migration 10 skipped, primary key already exists
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 11
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 12
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 13
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 14
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 15
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 16
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 17
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 18
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 19
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 20
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 21
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 22
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 23
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 24
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 25
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 26
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 27
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 28
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 29
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 30
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 31
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 32
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 33
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 34
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 35
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 36
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 37
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 38
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 39
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 40
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 41
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 42
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 43
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 44
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 45
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 46
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 47
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 100
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 101
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 102
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 103
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 104
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 105
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 106
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 107
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 108
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 109
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 110
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 111
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 112
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 113
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 114
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 115
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 116
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 117
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 118
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 119
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 120
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 121
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 122
+16:15:55 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 123
+16:15:55 [    INFO] (dbos:_dbos.py:720) No workflows to recover from application version v1
+16:15:55 [    INFO] (dbos:_dbos.py:831) DBOS launched!
+16:15:55 [    INFO] (dbos:_dbos.py:839) To view and manage workflows, connect to DBOS Conductor at: https://console.dbos.dev/self-host?appname=spk2
+16:15:55 [    INFO] (dbos:_queue.py:969) Listening to 0 queues:
+16:15:55 [    INFO] (dbos:_dbos.py:1057) Registered and listening to new queue:
+16:15:55 [    INFO] (dbos:_queue.py:944) Queue: writing (concurrency=1)
+16:15:55 [    INFO] (dbos:_dbos.py:1057) Registered and listening to new queue:
+16:15:55 [    INFO] (dbos:_queue.py:944) Queue: readonly (concurrency=2)
+16:16:01 [    INFO] (dbos:_queue.py:907) Stopping queue manager, joining all worker threads...
+16:16:01 [    INFO] (dbos:_dbos.py:451) DBOS successfully shut down
+16:16:02 [    INFO] (dbos:_dbos.py:549) Initializing DBOS (v3.3.0)
+16:16:02 [    INFO] (dbos:_dbos.py:632) Executor ID: local
+16:16:02 [    INFO] (dbos:_dbos.py:633) Application version: v1
+16:16:02 [    INFO] (dbos:_dbos.py:634) Application name: spk2
+16:16:02 [    INFO] (dbos:_sys_db.py:694) Initializing DBOS system database with URL: postgresql://spk2:***@127.0.0.1:5433/spk2 (schema: dbos)
+16:16:02 [    INFO] (dbos:_sys_db.py:702) DBOS system database engine parameters: {'connect_args': {'application_name': 'dbos_transact', 'connect_timeout': 10}, 'pool_timeout': 30, 'max_overflow': 0, 'pool_size': 20, 'pool_pre_ping': True}
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 1
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 2
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 3
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 4
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 5
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 6
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 7
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 8
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 9
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 10
+16:16:02 [    INFO] (dbos:_migration.py:286) Migration 10 skipped, primary key already exists
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 11
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 12
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 13
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 14
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 15
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 16
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 17
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 18
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 19
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 20
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 21
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 22
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 23
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 24
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 25
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 26
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 27
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 28
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 29
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 30
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 31
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 32
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 33
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 34
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 35
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 36
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 37
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 38
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 39
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 40
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 41
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 42
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 43
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 44
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 45
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 46
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 47
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 100
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 101
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 102
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 103
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 104
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 105
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 106
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 107
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 108
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 109
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 110
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 111
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 112
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 113
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 114
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 115
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 116
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 117
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 118
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 119
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 120
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 121
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 122
+16:16:02 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 123
+16:16:02 [    INFO] (dbos:_dbos.py:720) No workflows to recover from application version v1
+16:16:02 [    INFO] (dbos:_dbos.py:831) DBOS launched!
+16:16:02 [    INFO] (dbos:_dbos.py:839) To view and manage workflows, connect to DBOS Conductor at: https://console.dbos.dev/self-host?appname=spk2
+16:16:02 [    INFO] (dbos:_queue.py:969) Listening to 0 queues:
+16:16:02 [    INFO] (dbos:_dbos.py:1057) Registered and listening to new queue:
+16:16:02 [    INFO] (dbos:_queue.py:944) Queue: writing (concurrency=1)
+16:16:02 [    INFO] (dbos:_dbos.py:1057) Registered and listening to new queue:
+16:16:02 [    INFO] (dbos:_queue.py:944) Queue: readonly (concurrency=2)
+16:16:10 [    INFO] (dbos:_queue.py:907) Stopping queue manager, joining all worker threads...
+16:16:10 [    INFO] (dbos:_dbos.py:451) DBOS successfully shut down
+16:16:10 [    INFO] (dbos:_dbos.py:549) Initializing DBOS (v3.3.0)
+16:16:10 [    INFO] (dbos:_dbos.py:632) Executor ID: local
+16:16:10 [    INFO] (dbos:_dbos.py:633) Application version: v1
+16:16:10 [    INFO] (dbos:_dbos.py:634) Application name: spk2
+16:16:10 [    INFO] (dbos:_sys_db.py:694) Initializing DBOS system database with URL: postgresql://spk2:***@127.0.0.1:5433/spk2 (schema: dbos)
+16:16:10 [    INFO] (dbos:_sys_db.py:702) DBOS system database engine parameters: {'connect_args': {'application_name': 'dbos_transact', 'connect_timeout': 10}, 'pool_timeout': 30, 'max_overflow': 0, 'pool_size': 20, 'pool_pre_ping': True}
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 1
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 2
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 3
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 4
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 5
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 6
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 7
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 8
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 9
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 10
+16:16:11 [    INFO] (dbos:_migration.py:286) Migration 10 skipped, primary key already exists
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 11
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 12
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 13
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 14
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 15
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 16
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 17
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 18
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 19
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 20
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 21
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 22
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 23
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 24
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 25
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 26
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 27
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 28
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 29
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 30
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 31
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 32
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 33
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 34
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 35
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 36
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 37
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 38
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 39
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 40
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 41
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 42
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 43
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 44
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 45
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 46
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 47
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 100
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 101
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 102
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 103
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 104
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 105
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 106
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 107
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 108
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 109
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 110
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 111
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 112
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 113
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 114
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 115
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 116
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 117
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 118
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 119
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 120
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 121
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 122
+16:16:11 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 123
+16:16:11 [    INFO] (dbos:_dbos.py:720) No workflows to recover from application version v1
+16:16:11 [    INFO] (dbos:_dbos.py:831) DBOS launched!
+16:16:11 [    INFO] (dbos:_dbos.py:839) To view and manage workflows, connect to DBOS Conductor at: https://console.dbos.dev/self-host?appname=spk2
+16:16:11 [    INFO] (dbos:_queue.py:969) Listening to 0 queues:
+16:16:11 [    INFO] (dbos:_dbos.py:1057) Registered and listening to new queue:
+16:16:11 [    INFO] (dbos:_queue.py:944) Queue: writing (concurrency=1)
+16:16:11 [    INFO] (dbos:_dbos.py:1057) Registered and listening to new queue:
+16:16:11 [    INFO] (dbos:_queue.py:944) Queue: readonly (concurrency=2)
+16:16:26 [ WARNING] (dbos:_core.py:836) Workflow e7-x is no longer owned by this execution. Waiting for the owner's recorded outcome
+16:16:26 [   ERROR] (dbos:_core.py:1133) Exception encountered in background workflow:
+Traceback (most recent call last):
+  File "/home/user/grindstone-testbed/spk2/.venv/lib/python3.14/site-packages/dbos/_core.py", line 1126, in _execute_workflow_wthread
+    return Immediate[R](
+           ~~~~~~~~~~~~~
+    ...<2 lines>...
+        )
+        ~
+    ).then(_get_wf_invoke_func(dbos, status, entry.release))()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/user/grindstone-testbed/spk2/.venv/lib/python3.14/site-packages/dbos/_outcome.py", line 213, in __call__
+    return self._func()
+           ~~~~~~~~~~^^
+  File "/home/user/grindstone-testbed/spk2/.venv/lib/python3.14/site-packages/dbos/_outcome.py", line 133, in <lambda>
+    return Immediate(lambda: resolve_deferred(next(self._func)))
+                             ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/home/user/grindstone-testbed/spk2/.venv/lib/python3.14/site-packages/dbos/_outcome.py", line 70, in resolve_deferred
+    return cast(R, value.resolve())
+                   ~~~~~~~~~~~~~^^
+  File "/home/user/grindstone-testbed/spk2/.venv/lib/python3.14/site-packages/dbos/_outcome.py", line 60, in resolve
+    return self._sync_resolve()
+           ~~~~~~~~~~~~~~~~~~^^
+  File "/home/user/grindstone-testbed/spk2/.venv/lib/python3.14/site-packages/dbos/_core.py", line 157, in <lambda>
+    lambda: dbos._sys_db.await_workflow_result(
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        workflow_id,
+        ^^^^^^^^^^^^
+        polling_interval=DEFAULT_POLLING_INTERVAL,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        fail_if_missing=fail_if_missing,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ),
+    ^
+  File "/home/user/grindstone-testbed/spk2/.venv/lib/python3.14/site-packages/dbos/_sys_db.py", line 2208, in await_workflow_result
+    result = self.check_workflow_result(
+        workflow_id, fail_if_missing=fail_if_missing
+    )
+  File "/home/user/grindstone-testbed/spk2/.venv/lib/python3.14/site-packages/dbos/_sys_db.py", line 2195, in check_workflow_result
+    raise DBOSAwaitedWorkflowCancelledError(workflow_id)
+dbos._error.DBOSAwaitedWorkflowCancelledError: DBOS Error 13: Awaited workflow e7-x was cancelled
+16:16:27 [    INFO] (dbos:_queue.py:907) Stopping queue manager, joining all worker threads...
+16:16:27 [    INFO] (dbos:_dbos.py:451) DBOS successfully shut down
+16:16:27 [    INFO] (dbos:_dbos.py:549) Initializing DBOS (v3.3.0)
+16:16:27 [    INFO] (dbos:_dbos.py:632) Executor ID: local
+16:16:27 [    INFO] (dbos:_dbos.py:633) Application version: v1
+16:16:27 [    INFO] (dbos:_dbos.py:634) Application name: spk2
+16:16:27 [    INFO] (dbos:_sys_db.py:694) Initializing DBOS system database with URL: postgresql://spk2:***@127.0.0.1:5433/spk2 (schema: dbos)
+16:16:27 [    INFO] (dbos:_sys_db.py:702) DBOS system database engine parameters: {'connect_args': {'application_name': 'dbos_transact', 'connect_timeout': 10}, 'pool_timeout': 30, 'max_overflow': 0, 'pool_size': 20, 'pool_pre_ping': True}
+16:16:27 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 1
+16:16:27 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 2
+16:16:27 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 3
+16:16:27 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 4
+16:16:27 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 5
+16:16:27 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 6
+16:16:27 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 7
+16:16:27 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 8
+16:16:27 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 9
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 10
+16:16:28 [    INFO] (dbos:_migration.py:286) Migration 10 skipped, primary key already exists
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 11
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 12
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 13
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 14
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 15
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 16
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 17
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 18
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 19
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 20
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 21
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 22
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 23
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 24
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 25
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 26
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 27
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 28
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 29
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 30
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 31
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 32
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 33
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 34
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 35
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 36
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 37
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 38
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 39
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 40
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 41
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 42
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 43
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 44
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 45
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 46
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 47
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 100
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 101
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 102
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 103
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 104
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 105
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 106
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 107
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 108
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 109
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 110
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 111
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 112
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 113
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 114
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 115
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 116
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 117
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 118
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 119
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 120
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 121
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 122
+16:16:28 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 123
+16:16:28 [    INFO] (dbos:_dbos.py:720) No workflows to recover from application version v1
+16:16:28 [    INFO] (dbos:_dbos.py:831) DBOS launched!
+16:16:28 [    INFO] (dbos:_dbos.py:839) To view and manage workflows, connect to DBOS Conductor at: https://console.dbos.dev/self-host?appname=spk2
+16:16:28 [    INFO] (dbos:_queue.py:969) Listening to 0 queues:
+16:16:28 [    INFO] (dbos:_dbos.py:1057) Registered and listening to new queue:
+16:16:28 [    INFO] (dbos:_queue.py:944) Queue: writing (concurrency=1)
+16:16:28 [    INFO] (dbos:_dbos.py:1057) Registered and listening to new queue:
+16:16:28 [    INFO] (dbos:_queue.py:944) Queue: readonly (concurrency=2)
+16:16:31 [    INFO] (dbos:_dbos.py:549) Initializing DBOS (v3.3.0)
+16:16:31 [    INFO] (dbos:_dbos.py:632) Executor ID: local
+16:16:31 [    INFO] (dbos:_dbos.py:633) Application version: v2
+16:16:31 [    INFO] (dbos:_dbos.py:634) Application name: spk2
+16:16:31 [    INFO] (dbos:_sys_db.py:694) Initializing DBOS system database with URL: postgresql://spk2:***@127.0.0.1:5433/spk2 (schema: dbos)
+16:16:31 [    INFO] (dbos:_sys_db.py:702) DBOS system database engine parameters: {'connect_args': {'application_name': 'dbos_transact', 'connect_timeout': 10}, 'pool_timeout': 30, 'max_overflow': 0, 'pool_size': 20, 'pool_pre_ping': True}
+16:16:31 [    INFO] (dbos:_dbos.py:720) No workflows to recover from application version v2
+16:16:31 [    INFO] (dbos:_dbos.py:831) DBOS launched!
+16:16:31 [    INFO] (dbos:_dbos.py:839) To view and manage workflows, connect to DBOS Conductor at: https://console.dbos.dev/self-host?appname=spk2
+16:16:31 [    INFO] (dbos:_queue.py:969) Listening to 2 queues:
+16:16:31 [    INFO] (dbos:_queue.py:944) Queue: writing (concurrency=1)
+16:16:31 [    INFO] (dbos:_queue.py:944) Queue: readonly (concurrency=2)
+16:17:03 [    INFO] (dbos:_queue.py:907) Stopping queue manager, joining all worker threads...
+16:17:03 [    INFO] (dbos:_dbos.py:451) DBOS successfully shut down
+16:17:04 [    INFO] (dbos:_dbos.py:549) Initializing DBOS (v3.3.0)
+16:17:04 [    INFO] (dbos:_dbos.py:632) Executor ID: local
+16:17:04 [    INFO] (dbos:_dbos.py:633) Application version: v1
+16:17:04 [    INFO] (dbos:_dbos.py:634) Application name: spk2
+16:17:04 [    INFO] (dbos:_sys_db.py:694) Initializing DBOS system database with URL: postgresql://spk2:***@127.0.0.1:5433/spk2 (schema: dbos)
+16:17:04 [    INFO] (dbos:_sys_db.py:702) DBOS system database engine parameters: {'connect_args': {'application_name': 'dbos_transact', 'connect_timeout': 10}, 'pool_timeout': 30, 'max_overflow': 0, 'pool_size': 20, 'pool_pre_ping': True}
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 1
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 2
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 3
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 4
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 5
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 6
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 7
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 8
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 9
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 10
+16:17:04 [    INFO] (dbos:_migration.py:286) Migration 10 skipped, primary key already exists
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 11
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 12
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 13
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 14
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 15
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 16
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 17
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 18
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 19
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 20
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 21
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 22
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 23
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 24
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 25
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 26
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 27
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 28
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 29
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 30
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 31
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 32
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 33
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 34
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 35
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 36
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 37
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 38
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 39
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 40
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 41
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 42
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 43
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 44
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 45
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 46
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 47
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 100
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 101
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 102
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 103
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 104
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 105
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 106
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 107
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 108
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 109
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 110
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 111
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 112
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 113
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 114
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 115
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 116
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 117
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 118
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 119
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 120
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 121
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 122
+16:17:04 [    INFO] (dbos:_migration.py:253) Applying DBOS system database schema migration 123
+16:17:04 [    INFO] (dbos:_dbos.py:720) No workflows to recover from application version v1
+16:17:04 [    INFO] (dbos:_dbos.py:831) DBOS launched!
+16:17:04 [    INFO] (dbos:_dbos.py:839) To view and manage workflows, connect to DBOS Conductor at: https://console.dbos.dev/self-host?appname=spk2
+16:17:04 [    INFO] (dbos:_queue.py:969) Listening to 0 queues:
+16:17:05 [    INFO] (dbos:_dbos.py:1057) Registered and listening to new queue:
+16:17:05 [    INFO] (dbos:_queue.py:944) Queue: writing (concurrency=1)
+16:17:05 [    INFO] (dbos:_dbos.py:1057) Registered and listening to new queue:
+16:17:05 [    INFO] (dbos:_queue.py:944) Queue: readonly (concurrency=2)
+16:17:38 [    INFO] (dbos:_queue.py:907) Stopping queue manager, joining all worker threads...
+16:17:38 [    INFO] (dbos:_dbos.py:451) DBOS successfully shut down

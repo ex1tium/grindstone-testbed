@@ -1,0 +1,34 @@
+{
+  "bench": {
+    "n": 500.0,
+    "plain_s": 10.766168253999922,
+    "dbos_s": 22.56472359999998
+  },
+  "schema_bytes": "1490944",
+  "tables": [
+    [
+      "operation_outputs",
+      1002
+    ],
+    [
+      "workflow_output",
+      507
+    ],
+    [
+      "workflow_input",
+      504
+    ],
+    [
+      "workflow_status",
+      503
+    ],
+    [
+      "queues",
+      2
+    ],
+    [
+      "dbos_migrations",
+      1
+    ]
+  ]
+}
