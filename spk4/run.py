@@ -572,7 +572,16 @@ def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--only", nargs="+", choices=list(EXPERIMENTS), help="run these (e4 also runs e5)")
     ap.add_argument("--public-only", action="store_true", help="skip e9, e10, e11 and restore")
+    ap.add_argument("--merge", type=int, metavar="PR",
+                    help="set the App's success on that pull request's head and merge it (squash), then stop")
     args = ap.parse_args()
+    if args.merge:
+        head = pr(args.merge)["head"]["sha"]
+        set_status(head, "success", "SPK-4: merged by the operator's request")
+        state = pr_state(args.merge, "clean")["mergeable_state"]
+        code, msg = merge(args.merge, head)
+        say(f"#{args.merge} at {head[:7]}: `{state}`, merge HTTP {code} {msg}")
+        return
     names = args.only or [k for k in EXPERIMENTS if not (args.public_only and k in PRIVATE)]
     say(f"SPK-4 run {RUN}: {names}; results in {OUT}")
     g = Git()
