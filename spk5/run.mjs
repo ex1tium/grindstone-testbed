@@ -19,6 +19,8 @@ const t0 = Date.now();
 const now = () => +((Date.now() - t0) / 1000).toFixed(1);
 const record = {};
 const note = (k, v) => { record[k] = v; writeFileSync(join(OUT, 'record.json'), JSON.stringify({ M, P, record }, null, 1)); console.log(`[${now()}s] ${k}: ${JSON.stringify(v).slice(0, 300)}`); };
+const ONLY = process.env.SPK5_ONLY?.split(',');
+const on = (name) => !ONLY || ONLY.includes(name);
 const sleep = (s) => new Promise((r) => setTimeout(r, s * 1000));
 
 // --- the stub kernel and the consult agent endpoint ---------------------------------------------------------
@@ -84,6 +86,8 @@ const liveness = setInterval(async () => {
   if (!st) return;
   for (const x of Object.values(sessions)) {
     if (x.done) continue;
+    if (!x.armed && x.name !== 'S1' && x.w.actions.some((a) => a.action.type === 'chat/toolCallStart')) x.armed = true;
+    if (!x.armed) continue;
     const last = x.w.actions.at(-1)?.at ?? t0;
     if ((Date.now() - last) / 1000 > LIVENESS && !(st.open[x.name] > 0) && !flagged[x.name]) {
       flagged[x.name] = now();
@@ -93,22 +97,25 @@ const liveness = setInterval(async () => {
 }, 5000);
 
 // --- the experiments -------------------------------------------------------------------------------------------
-const exp1 = [2, 10, 30, 120].map(async (mins) => {
+const exp1 = (on('exp1') ? [2, 10, 30, 120] : []).map(async (mins) => {
   const x = await session(`L${mins}`, { delay: mins * M });
   note(`exp1:L${mins}`, await turn(x, ASK(`long question ${mins}`)));
   x.done = true;
 });
 const exp2 = (async () => {
+  if (!on('exp2')) return;
   const x = await session('N10', { delay: 10 * M, progress: 0 });
   note('exp2:N10-no-keepalive', await turn(x, ASK('quiet question')));
   x.done = true;
 })();
 const exp1Default = (async () => {
+  if (!on('exp1')) return;
   const x = await session('D10', { delay: 10 * M, env: {} });
   note('exp1:D10-default-config', await turn(x, ASK('default question')));
   x.done = true;
 })();
 const exp3 = (async () => {
+  if (!on('exp3')) return;
   const q = 'joined question';
   const a = await session('J1', { delay: 30 * M });
   const first = turn(a, ASK(q));
@@ -121,6 +128,7 @@ const exp3 = (async () => {
   b.done = true;
 })();
 const exp4 = (async () => {
+  if (!on('exp4')) return;
   const q = 'ceiling question';
   const a = await session('C1', { delay: 10 * M, ceiling: 5 * M });
   note('exp4:C1', await turn(a, ASK(q)));
@@ -141,12 +149,14 @@ const exp4 = (async () => {
   b.done = true;
 })();
 const exp5 = (async () => {
+  if (!on('exp5')) return;
   // A session that goes silent with no open tool call: its agent processes are stopped mid-turn.
   const x = await session('S1');
   const id = startTurn(client, x.s.chat, 'Run the shell command `sleep 3` four times, one call at a time, then reply DONE.');
   await x.w.until((a) => a.type === 'chat/toolCallStart', 120000);
   const pids = readdirSync('/proc').filter((p) => /^\d+$/.test(p)).filter((p) => { try { return readlinkSync(`/proc/${p}/cwd`) === x.ws; } catch { return false; } });
   for (const p of pids) try { process.kill(Number(p), 'SIGSTOP'); } catch {}
+  x.armed = true;
   note('exp5:S1-stopped', { at: now(), pids: pids.length });
   await sleep(LIVENESS + 30);
   note('exp5:S1-flagged', flagged.S1 ?? null);
@@ -154,12 +164,16 @@ const exp5 = (async () => {
   x.done = true;
 })();
 const exp6 = (async () => {
+  if (!on('exp6')) return;
   const x = await session('K1');
   note('exp6:K1', await turn(x, 'Call the load_skill tool of the grindstone MCP server with the name "review", then follow the instructions it returns.', 300000));
+  note('exp6:K1-next-turn', await turn(x, 'Call the review_codeword tool of the grindstone MCP server and reply with exactly the codeword it returns, prefixed with CODEWORD: .', 300000));
   note('exp6:tools', x.w.actions.filter((a) => a.action.type === 'chat/toolCallStart').map((a) => a.action.toolName));
+  note('exp6:tools_list', (await kstate()).log.filter((l) => l.session === 'K1'));
   x.done = true;
 })();
 const exp7 = (async () => {
+  if (!on('exp7')) return;
   const q = 'In the fixture project, which functions does src/testbed/text.py define, and what does each do?';
   const a = await session('X1', { consultUrl: 'http://127.0.0.1:8742/consult' });
   note('exp7:X1-uncached', await turn(a, ASK(q), 900000));

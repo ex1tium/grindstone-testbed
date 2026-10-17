@@ -18,6 +18,7 @@ from typing import Any
 from fastapi import FastAPI
 from fastmcp import Context, FastMCP
 from fastmcp.server.dependencies import get_http_headers
+from fastmcp.server.middleware import Middleware
 
 TOKENS: dict[str, dict[str, Any]] = {}
 CONSULTS: dict[str, dict[str, Any]] = {}
@@ -120,6 +121,22 @@ def review_codeword() -> str:
 
 
 mcp.disable(names={"review_codeword"})
+
+
+class ListLog(Middleware):
+    """Records each tools/list a session makes and which of the skill's tools it was given (experiment 6)."""
+
+    async def on_list_tools(self, context: Any, call_next: Any) -> Any:
+        tools = await call_next(context)
+        try:
+            session = who()["session"]
+        except Exception:
+            session = "?"
+        log("tools_list", session=session, has_review_codeword=any(getattr(t, "name", "") == "review_codeword" for t in tools))
+        return tools
+
+
+mcp.add_middleware(ListLog())
 
 
 class Bearer:
