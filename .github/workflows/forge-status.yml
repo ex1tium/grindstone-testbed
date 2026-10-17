@@ -26,3 +26,4 @@ jobs:
           gh api "repos/${GITHUB_REPOSITORY}/statuses/${SHA}" \
             -f state=success -f context=grindstone/verification \
             -f description="Forged by a workflow (SPK-4); must not satisfy the ruleset"
+# registered
