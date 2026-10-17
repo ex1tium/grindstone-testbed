@@ -1,0 +1,28 @@
+# SPK-4 experiment 2: post a `grindstone/verification` status with this
+# repository's own token. The ruleset requires that check from the Grindstone
+# App only, so this status must not satisfy it. Manual trigger only.
+name: Forge verification status
+
+on:
+  workflow_dispatch:
+    inputs:
+      sha:
+        description: Commit to mark
+        required: true
+
+permissions:
+  statuses: write
+
+jobs:
+  forge:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Post a forged success status
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SHA: ${{ inputs.sha }}
+        run: |
+          gh api "repos/${GITHUB_REPOSITORY}/statuses/${SHA}" \
+            -f state=success -f context=grindstone/verification \
+            -f description="Forged by a workflow (SPK-4); must not satisfy the ruleset"

@@ -1,0 +1,7 @@
+[project]
+name = "testbed"
+version = "0.0.0"
+description = "Fixture project for Grindstone's delivery and verification tests."
+license = "Apache-2.0"
+requires-python = ">=3.11"
+dependencies = []

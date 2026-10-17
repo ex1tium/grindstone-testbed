@@ -1,0 +1,3 @@
+#!/bin/sh
+# Hostile fixture: proves a repository hook ran. Grindstone commits with hooks disabled.
+echo "hook ran at $(date -u +%FT%TZ)" > /tmp/grindstone-hostile-hook-ran
