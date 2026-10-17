@@ -1,0 +1,12 @@
+{
+  "status": 200,
+  "slug": "grindstone-dev-rootnode",
+  "permissions": {
+    "checks": "read",
+    "contents": "write",
+    "issues": "read",
+    "metadata": "read",
+    "pull_requests": "write",
+    "statuses": "write"
+  }
+}

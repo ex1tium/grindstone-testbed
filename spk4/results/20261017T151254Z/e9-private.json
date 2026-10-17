@@ -1,0 +1,16 @@
+{
+  "visibility": "private",
+  "rules_status": 403,
+  "rules": {
+    "message": "Upgrade to GitHub Pro or make this repository public to enable this feature.",
+    "documentation_url": "https://docs.github.com/rest/repos/rules#get-rules-for-a-branch",
+    "status": "403"
+  },
+  "rulesets_status": 403,
+  "rulesets": {
+    "message": "Upgrade to GitHub Pro or make this repository public to enable this feature.",
+    "documentation_url": "https://docs.github.com/rest/repos/rules#get-all-repository-rulesets",
+    "status": "403"
+  },
+  "verdict_enforced": false
+}

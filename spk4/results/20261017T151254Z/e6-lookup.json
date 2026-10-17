@@ -1,0 +1,24 @@
+{
+  "e1": [
+    [
+      2,
+      "closed",
+      true
+    ]
+  ],
+  "e3": [
+    [
+      4,
+      "closed",
+      false
+    ]
+  ],
+  "e5": [
+    [
+      7,
+      "closed",
+      true
+    ]
+  ],
+  "missing": []
+}

@@ -1,0 +1,152 @@
+{
+  "rate_limit": {
+    "resources": {
+      "core": {
+        "limit": 5000,
+        "used": 61,
+        "remaining": 4939,
+        "reset": 1792253480
+      },
+      "search": {
+        "limit": 30,
+        "used": 0,
+        "remaining": 30,
+        "reset": 1792250818
+      },
+      "graphql": {
+        "limit": 5000,
+        "used": 0,
+        "remaining": 5000,
+        "reset": 1792254358
+      },
+      "integration_manifest": {
+        "limit": 5000,
+        "used": 0,
+        "remaining": 5000,
+        "reset": 1792254358
+      },
+      "source_import": {
+        "limit": 100,
+        "used": 0,
+        "remaining": 100,
+        "reset": 1792250818
+      },
+      "code_scanning_autofix": {
+        "limit": 10,
+        "used": 0,
+        "remaining": 10,
+        "reset": 1792250818
+      },
+      "actions_runner_registration": {
+        "limit": 10000,
+        "used": 0,
+        "remaining": 10000,
+        "reset": 1792254358
+      },
+      "scim": {
+        "limit": 15000,
+        "used": 0,
+        "remaining": 15000,
+        "reset": 1792254358
+      },
+      "dependency_snapshots": {
+        "limit": 100,
+        "used": 0,
+        "remaining": 100,
+        "reset": 1792250818
+      },
+      "dependency_sbom": {
+        "limit": 100,
+        "used": 0,
+        "remaining": 100,
+        "reset": 1792250818
+      },
+      "audit_log": {
+        "limit": 1750,
+        "used": 0,
+        "remaining": 1750,
+        "reset": 1792254358
+      },
+      "audit_log_streaming": {
+        "limit": 15,
+        "used": 0,
+        "remaining": 15,
+        "reset": 1792254358
+      },
+      "code_search": {
+        "limit": 10,
+        "used": 0,
+        "remaining": 10,
+        "reset": 1792250818
+      },
+      "copilot_usage_records": {
+        "limit": 1750,
+        "used": 0,
+        "remaining": 1750,
+        "reset": 1792254358
+      },
+      "enterprise_token_inventory": {
+        "limit": 1750,
+        "used": 0,
+        "remaining": 1750,
+        "reset": 1792254358
+      }
+    },
+    "rate": {
+      "limit": 5000,
+      "used": 61,
+      "remaining": 4939,
+      "reset": 1792253480
+    }
+  },
+  "poll": [
+    {
+      "path": "/pulls/7",
+      "etag": true,
+      "used_after_200": "63",
+      "used_after_304s": "63",
+      "limit": "5000",
+      "resource": "core"
+    },
+    {
+      "path": "/pulls/7/comments?per_page=100",
+      "etag": true,
+      "used_after_200": "64",
+      "used_after_304s": "64",
+      "limit": "5000",
+      "resource": "core"
+    },
+    {
+      "path": "/pulls/7/reviews?per_page=100",
+      "etag": true,
+      "used_after_200": "65",
+      "used_after_304s": "65",
+      "limit": "5000",
+      "resource": "core"
+    },
+    {
+      "path": "/issues/7/comments?per_page=100",
+      "etag": true,
+      "used_after_200": "66",
+      "used_after_304s": "66",
+      "limit": "5000",
+      "resource": "core"
+    },
+    {
+      "path": "/commits/37d0e59aea5a072609b54a85d497846f931abbcc/status",
+      "etag": true,
+      "used_after_200": "67",
+      "used_after_304s": "67",
+      "limit": "5000",
+      "resource": "core"
+    },
+    {
+      "path": "/commits/37d0e59aea5a072609b54a85d497846f931abbcc/check-runs",
+      "etag": true,
+      "used_after_200": "68",
+      "used_after_304s": "68",
+      "limit": "5000",
+      "resource": "core"
+    }
+  ]
+}
