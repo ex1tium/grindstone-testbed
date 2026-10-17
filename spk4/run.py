@@ -313,6 +313,9 @@ def e1(g: Git) -> None:
         "context_256": set_status(sha, "pending", "x", "c" * 256)[0],
     }
     save("e1-limits.json", lim)
+    # Settle the throwaway contexts: a pending optional status reads as `unstable`, not `clean`.
+    set_status(sha, "success", "x", "spk4/limits")
+    set_status(sha, "success", "x", "c" * 255)
     s, body = set_status(sha, "success", "SPK-4 e1: verified by the App")
     creator = body.get("creator", {}) if isinstance(body, dict) else {}
     after = pr_state(n, "clean")["mergeable_state"]
