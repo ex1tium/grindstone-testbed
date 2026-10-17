@@ -1,2 +1,3 @@
 results/smoke*
 results/*.log
+results/full/
