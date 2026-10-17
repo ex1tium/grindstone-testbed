@@ -1,0 +1,732 @@
+{
+ "M": 60,
+ "P": 30,
+ "record": {
+  "exp5:S1-stopped": {
+   "at": 11.6,
+   "pids": 3
+  },
+  "exp6:K1": {
+   "startedAt": 1.7,
+   "endedAt": 17.7,
+   "end": "chat/turnComplete",
+   "reply": "e to call `review_codeword` on the grindstone server and reply with the codeword it returns. That tool isn't available here. Searching for it by name returned nothing, and the server only exposes `ask` and `load_skill`. I have no codeword, and I won't guess one.\n\nIf the tool should exist, check the grindstone server's configuration. Tell me if you want me to try another way, such as calling `ask`.",
+   "tool": [
+    "{\"success\":true,\"pastTenseMessage\":\"ToolSearch\",\"content\":[{\"type\":\"text\",\"text\":\"Tool: mcp__grindstone__load_skill\"}]}",
+    "{\"success\":true,\"pastTenseMessage\":\"mcp__grindstone__load_skill\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"result\\\":\\\"Review skill, loaded. Instructions: call the tool `review_codeword` of this server now, then reply with\\\\nexactly the codeword it returns, prefixed with CODEWORD: .\\\"}\"}]}",
+    "{\"success\":true,\"pastTenseMessage\":\"ToolSearch\",\"content\":[{\"type\":\"text\",\"text\":\"No matching deferred tools found\"}]}",
+    "{\"success\":true,\"pastTenseMessage\":\"ToolSearch\",\"content\":[{\"type\":\"text\",\"text\":\"No matching deferred tools found\"}]}"
+   ]
+  },
+  "consultAgent": {
+   "wallS": 3.964,
+   "toolCalls": 1,
+   "usage": {
+    "sessionUpdate": "usage_update",
+    "used": 16953,
+    "size": 1000000,
+    "cost": {
+     "amount": 0.0277489,
+     "currency": "USD"
+    },
+    "_meta": {
+     "_claude/origin": {
+      "kind": "human"
+     },
+     "_claude/model": "claude-sonnet-5-5"
+    }
+   }
+  },
+  "exp7:X1-uncached": {
+   "startedAt": 1.7,
+   "endedAt": 20.5,
+   "end": "chat/turnComplete",
+   "reply": "ANSWER: `src/testbed/text.py` defines one function, `word_count(text: str) -> int`. It counts the whitespace-separated words in a string, using `len(text.split())`. The module docstring says `slugify` (REQ-0101) isn't implemented yet. Ticket TKT-0001 in `intent/` asks for it.",
+   "tool": [
+    "{\"success\":true,\"pastTenseMessage\":\"ToolSearch\",\"content\":[{\"type\":\"text\",\"text\":\"Tool: mcp__grindstone__ask\"}]}",
+    "{\"success\":true,\"pastTenseMessage\":\"mcp__grindstone__ask\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"status\\\":\\\"answered\\\",\\\"answer\\\":\\\"`src/testbed/text.py` defines one function, `word_count(text: str) -> int`. It counts the whitespace-separated words in a string, using `len(text.split())`. The module do"
+   ]
+  },
+  "exp6:K1-next-turn": {
+   "startedAt": 17.7,
+   "endedAt": 22.2,
+   "end": "chat/turnComplete",
+   "reply": "I still can't get the codeword. The grindstone server only offers `ask` and `load_skill`. There is no `review_codeword` tool, and a search by its exact name finds nothing. I won't make up a codeword.\n\nLoading the `review` skill again might register the tool. If you want me to try that, say so. The server's configuration may also need a fix.",
+   "tool": [
+    "{\"success\":true,\"pastTenseMessage\":\"ToolSearch\",\"content\":[{\"type\":\"text\",\"text\":\"Tool: mcp__grindstone__ask\"},{\"type\":\"text\",\"text\":\"Tool: mcp__grindstone__load_skill\"}]}",
+    "{\"success\":true,\"pastTenseMessage\":\"ToolSearch\",\"content\":[{\"type\":\"text\",\"text\":\"No matching deferred tools found\"}]}"
+   ]
+  },
+  "exp6:tools": [
+   "ToolSearch",
+   "mcp__grindstone__load_skill",
+   "ToolSearch",
+   "ToolSearch",
+   "ToolSearch",
+   "ToolSearch"
+  ],
+  "exp6:tools_list": [
+   {
+    "t": 6.6,
+    "kind": "http",
+    "session": "K1",
+    "method": "POST",
+    "accept": "application/json, text/event-stream",
+    "protocol": "2026-07-28"
+   },
+   {
+    "t": 7.9,
+    "kind": "http",
+    "session": "K1",
+    "method": "POST",
+    "accept": "application/json, text/event-stream",
+    "protocol": "2026-07-28"
+   },
+   {
+    "t": 7.9,
+    "kind": "http",
+    "session": "K1",
+    "method": "POST",
+    "accept": "application/json, text/event-stream",
+    "protocol": "2026-07-28"
+   },
+   {
+    "t": 7.9,
+    "kind": "http",
+    "session": "K1",
+    "method": "POST",
+    "accept": "application/json, text/event-stream",
+    "protocol": "2026-07-28"
+   },
+   {
+    "t": 7.9,
+    "kind": "tools_list",
+    "session": "K1",
+    "has_review_codeword": false
+   },
+   {
+    "t": 12.1,
+    "kind": "http",
+    "session": "K1",
+    "method": "POST",
+    "accept": "application/json, text/event-stream",
+    "protocol": "2026-07-28"
+   },
+   {
+    "t": 12.1,
+    "kind": "tools_list",
+    "session": "K1",
+    "has_review_codeword": false
+   },
+   {
+    "t": 12.1,
+    "kind": "load_skill",
+    "session": "K1",
+    "name": "review"
+   }
+  ],
+  "exp7:X2-cached": {
+   "startedAt": 20.5,
+   "endedAt": 26.8,
+   "end": "chat/turnComplete",
+   "reply": "ANSWER: `src/testbed/text.py` defines one function, `word_count(text: str) -> int`. It counts the whitespace-separated words in a string, using `len(text.split())`. The module docstring says `slugify` (REQ-0101) isn't implemented yet. Ticket TKT-0001 in `intent/` asks for it.",
+   "tool": [
+    "{\"success\":true,\"pastTenseMessage\":\"ToolSearch\",\"content\":[{\"type\":\"text\",\"text\":\"Tool: mcp__grindstone__ask\"}]}",
+    "{\"success\":true,\"pastTenseMessage\":\"mcp__grindstone__ask\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"status\\\":\\\"answered\\\",\\\"answer\\\":\\\"`src/testbed/text.py` defines one function, `word_count(text: str) -> int`. It counts the whitespace-separated words in a string, using `len(text.split())`. The module do"
+   ]
+  },
+  "exp1:L2": {
+   "startedAt": 1.6,
+   "endedAt": 135.1,
+   "end": "chat/turnComplete",
+   "reply": "ANSWER: The consult's answer to 'long question 2' is 42.",
+   "tool": [
+    "{\"success\":true,\"pastTenseMessage\":\"ToolSearch\",\"content\":[{\"type\":\"text\",\"text\":\"Tool: mcp__grindstone__ask\"}]}",
+    "{\"success\":true,\"pastTenseMessage\":\"mcp__grindstone__ask\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"status\\\":\\\"answered\\\",\\\"answer\\\":\\\"The consult's answer to 'long question 2' is 42.\\\",\\\"cached\\\":false}\"}]}"
+   ]
+  },
+  "stalled:S1": {
+   "at": 136.6,
+   "silentFor": 124.945
+  },
+  "exp5:S1-flagged": 136.6,
+  "exp3:J1-disposed": {
+   "at": 301.7,
+   "turn": {
+    "startedAt": 1.7,
+    "endedAt": 301.7,
+    "end": "chat/turnCancelled",
+    "reply": "",
+    "tool": [
+     "{\"success\":true,\"pastTenseMessage\":\"ToolSearch\",\"content\":[{\"type\":\"text\",\"text\":\"Tool: mcp__grindstone__ask\"}]}"
+    ]
+   }
+  },
+  "exp4:C1": {
+   "startedAt": 1.7,
+   "endedAt": 313.8,
+   "end": "chat/turnComplete",
+   "reply": "WAITING",
+   "tool": [
+    "{\"success\":true,\"pastTenseMessage\":\"ToolSearch\",\"content\":[{\"type\":\"text\",\"text\":\"Tool: mcp__grindstone__ask\"}]}",
+    "{\"success\":true,\"pastTenseMessage\":\"mcp__grindstone__ask\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"status\\\":\\\"consult_ceiling\\\",\\\"consult\\\":\\\"c-4\\\",\\\"message\\\":\\\"The consult is still working; this call returns so the run can wait.\\\"}\"}]}"
+   ]
+  },
+  "exp2:N10-no-keepalive": {
+   "startedAt": 1.7,
+   "endedAt": 315.7,
+   "end": "chat/turnComplete",
+   "reply": "FAILED: MCP server \"grindstone\" tool \"ask\" sent no response or progress for 300s; aborting. If this server is configured in your MCP settings, set a per-server \"timeout\" (ms) to allow longer silent runs for just this server; otherwise set CLAUDE_CODE_MCP_TOOL_IDLE_TIMEOUT (ms) globally (0 disables).",
+   "tool": [
+    "{\"success\":true,\"pastTenseMessage\":\"ToolSearch\",\"content\":[{\"type\":\"text\",\"text\":\"Tool: mcp__grindstone__ask\"}]}",
+    "{\"success\":false,\"pastTenseMessage\":\"mcp__grindstone__ask\",\"content\":[{\"type\":\"text\",\"text\":\"```\\nMCP server \\\"grindstone\\\" tool \\\"ask\\\" sent no response or progress for 300s; aborting. If this server is configured in your MCP settings, set a per-server \\\"timeout\\\" (ms) to allow longer silent runs f"
+   ]
+  },
+  "exp1:D10-default-config": {
+   "startedAt": 1.7,
+   "endedAt": 613.8,
+   "end": "chat/turnComplete",
+   "reply": "ANSWER: The consult's answer to 'default question' is 42.",
+   "tool": [
+    "{\"success\":true,\"pastTenseMessage\":\"ToolSearch\",\"content\":[{\"type\":\"text\",\"text\":\"Tool: mcp__grindstone__ask\"}]}",
+    "{\"success\":true,\"pastTenseMessage\":\"mcp__grindstone__ask\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"status\\\":\\\"answered\\\",\\\"answer\\\":\\\"The consult's answer to 'default question' is 42.\\\",\\\"cached\\\":false}\"}]}"
+   ]
+  },
+  "exp4:answer-arrived": {
+   "at": 614.1,
+   "consult": "c-4"
+  },
+  "exp1:L10": {
+   "startedAt": 1.7,
+   "endedAt": 614.1,
+   "end": "chat/turnComplete",
+   "reply": "ANSWER: The consult's answer to 'long question 10' is 42.",
+   "tool": [
+    "{\"success\":true,\"pastTenseMessage\":\"ToolSearch\",\"content\":[{\"type\":\"text\",\"text\":\"Tool: mcp__grindstone__ask\"}]}",
+    "{\"success\":true,\"pastTenseMessage\":\"mcp__grindstone__ask\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"status\\\":\\\"answered\\\",\\\"answer\\\":\\\"The consult's answer to 'long question 10' is 42.\\\",\\\"cached\\\":false}\"}]}"
+   ]
+  },
+  "exp4:C2-resumed": {
+   "startedAt": 614.1,
+   "endedAt": 618.9,
+   "end": "chat/turnComplete",
+   "reply": "DONE",
+   "tool": [
+    "{\"success\":true,\"pastTenseMessage\":\"Preparing file…\"}"
+   ]
+  },
+  "exp4:answer.txt": "The consult's answer to 'ceiling question' is 42.",
+  "exp1:L30": {
+   "startedAt": 1.7,
+   "endedAt": 1814,
+   "end": "chat/turnComplete",
+   "reply": "ANSWER: The consult's answer to 'long question 30' is 42.",
+   "tool": [
+    "{\"success\":true,\"pastTenseMessage\":\"ToolSearch\",\"content\":[{\"type\":\"text\",\"text\":\"Tool: mcp__grindstone__ask\"}]}",
+    "{\"success\":true,\"pastTenseMessage\":\"mcp__grindstone__ask\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"status\\\":\\\"answered\\\",\\\"answer\\\":\\\"The consult's answer to 'long question 30' is 42.\\\",\\\"cached\\\":false}\"}]}"
+   ]
+  },
+  "exp3:J2": {
+   "startedAt": 301.7,
+   "endedAt": 1814.6,
+   "end": "chat/turnComplete",
+   "reply": "ANSWER: The consult's answer to 'joined question' is 42.",
+   "tool": [
+    "{\"success\":true,\"pastTenseMessage\":\"ToolSearch\",\"content\":[{\"type\":\"text\",\"text\":\"Tool: mcp__grindstone__ask\"}]}",
+    "{\"success\":true,\"pastTenseMessage\":\"mcp__grindstone__ask\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"status\\\":\\\"answered\\\",\\\"answer\\\":\\\"The consult's answer to 'joined question' is 42.\\\",\\\"cached\\\":false}\"}]}"
+   ]
+  },
+  "exp1:L45": {
+   "startedAt": 1.7,
+   "endedAt": 2715.5,
+   "end": "chat/turnComplete",
+   "reply": "ANSWER: The consult's answer to 'long question 45' is 42.",
+   "tool": [
+    "{\"success\":true,\"pastTenseMessage\":\"ToolSearch\",\"content\":[{\"type\":\"text\",\"text\":\"Tool: mcp__grindstone__ask\"}]}",
+    "{\"success\":true,\"pastTenseMessage\":\"mcp__grindstone__ask\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"status\\\":\\\"answered\\\",\\\"answer\\\":\\\"The consult's answer to 'long question 45' is 42.\\\",\\\"cached\\\":false}\"}]}"
+   ]
+  },
+  "kernel": {
+   "consults": [
+    {
+     "id": "c-1",
+     "delivered": 1,
+     "runs": 1
+    },
+    {
+     "id": "c-2",
+     "delivered": 1,
+     "runs": 1
+    },
+    {
+     "id": "c-3",
+     "delivered": 1,
+     "runs": 1
+    },
+    {
+     "id": "c-4",
+     "delivered": 0,
+     "runs": 1
+    },
+    {
+     "id": "c-5",
+     "delivered": 1,
+     "runs": 1
+    },
+    {
+     "id": "c-6",
+     "delivered": 1,
+     "runs": 1
+    },
+    {
+     "id": "c-7",
+     "delivered": 1,
+     "runs": 1
+    },
+    {
+     "id": "c-8",
+     "delivered": 1,
+     "runs": 1
+    },
+    {
+     "id": "c-9",
+     "delivered": 2,
+     "runs": 1,
+     "cost": {
+      "wallS": 3.964,
+      "toolCalls": 1,
+      "usage": {
+       "sessionUpdate": "usage_update",
+       "used": 16953,
+       "size": 1000000,
+       "cost": {
+        "amount": 0.0277489,
+        "currency": "USD"
+       },
+       "_meta": {
+        "_claude/origin": {
+         "kind": "human"
+        },
+        "_claude/model": "claude-sonnet-5-5"
+       }
+      }
+     }
+    }
+   ],
+   "log": [
+    {
+     "t": 6.6,
+     "kind": "http",
+     "session": "K1",
+     "method": "POST",
+     "accept": "application/json, text/event-stream",
+     "protocol": "2026-07-28"
+    },
+    {
+     "t": 6.7,
+     "kind": "tools_list",
+     "session": "D10",
+     "has_review_codeword": false
+    },
+    {
+     "t": 6.8,
+     "kind": "tools_list",
+     "session": "L10",
+     "has_review_codeword": false
+    },
+    {
+     "t": 6.8,
+     "kind": "tools_list",
+     "session": "C1",
+     "has_review_codeword": false
+    },
+    {
+     "t": 6.9,
+     "kind": "tools_list",
+     "session": "L2",
+     "has_review_codeword": false
+    },
+    {
+     "t": 7.1,
+     "kind": "tools_list",
+     "session": "J1",
+     "has_review_codeword": false
+    },
+    {
+     "t": 7.3,
+     "kind": "tools_list",
+     "session": "L45",
+     "has_review_codeword": false
+    },
+    {
+     "t": 7.3,
+     "kind": "tools_list",
+     "session": "S1",
+     "has_review_codeword": false
+    },
+    {
+     "t": 7.6,
+     "kind": "tools_list",
+     "session": "L30",
+     "has_review_codeword": false
+    },
+    {
+     "t": 7.7,
+     "kind": "tools_list",
+     "session": "X1",
+     "has_review_codeword": false
+    },
+    {
+     "t": 7.9,
+     "kind": "http",
+     "session": "K1",
+     "method": "POST",
+     "accept": "application/json, text/event-stream",
+     "protocol": "2026-07-28"
+    },
+    {
+     "t": 7.9,
+     "kind": "http",
+     "session": "K1",
+     "method": "POST",
+     "accept": "application/json, text/event-stream",
+     "protocol": "2026-07-28"
+    },
+    {
+     "t": 7.9,
+     "kind": "http",
+     "session": "K1",
+     "method": "POST",
+     "accept": "application/json, text/event-stream",
+     "protocol": "2026-07-28"
+    },
+    {
+     "t": 7.9,
+     "kind": "tools_list",
+     "session": "K1",
+     "has_review_codeword": false
+    },
+    {
+     "t": 8.4,
+     "kind": "tools_list",
+     "session": "N10",
+     "has_review_codeword": false
+    },
+    {
+     "t": 11.2,
+     "kind": "tools_list",
+     "session": "L10",
+     "has_review_codeword": false
+    },
+    {
+     "t": 11.2,
+     "kind": "consult_start",
+     "session": "L10",
+     "consult": "c-1",
+     "progress_token": true
+    },
+    {
+     "t": 11.4,
+     "kind": "tools_list",
+     "session": "L30",
+     "has_review_codeword": false
+    },
+    {
+     "t": 11.4,
+     "kind": "consult_start",
+     "session": "L30",
+     "consult": "c-2",
+     "progress_token": true
+    },
+    {
+     "t": 11.4,
+     "kind": "tools_list",
+     "session": "D10",
+     "has_review_codeword": false
+    },
+    {
+     "t": 11.4,
+     "kind": "consult_start",
+     "session": "D10",
+     "consult": "c-3",
+     "progress_token": true
+    },
+    {
+     "t": 11.7,
+     "kind": "tools_list",
+     "session": "C1",
+     "has_review_codeword": false
+    },
+    {
+     "t": 11.7,
+     "kind": "consult_start",
+     "session": "C1",
+     "consult": "c-4",
+     "progress_token": true
+    },
+    {
+     "t": 12.1,
+     "kind": "http",
+     "session": "K1",
+     "method": "POST",
+     "accept": "application/json, text/event-stream",
+     "protocol": "2026-07-28"
+    },
+    {
+     "t": 12.1,
+     "kind": "tools_list",
+     "session": "K1",
+     "has_review_codeword": false
+    },
+    {
+     "t": 12.1,
+     "kind": "load_skill",
+     "session": "K1",
+     "name": "review"
+    },
+    {
+     "t": 12.4,
+     "kind": "tools_list",
+     "session": "J1",
+     "has_review_codeword": false
+    },
+    {
+     "t": 12.4,
+     "kind": "consult_start",
+     "session": "J1",
+     "consult": "c-5",
+     "progress_token": true
+    },
+    {
+     "t": 12.6,
+     "kind": "tools_list",
+     "session": "L2",
+     "has_review_codeword": false
+    },
+    {
+     "t": 12.6,
+     "kind": "consult_start",
+     "session": "L2",
+     "consult": "c-6",
+     "progress_token": true
+    },
+    {
+     "t": 12.9,
+     "kind": "tools_list",
+     "session": "L45",
+     "has_review_codeword": false
+    },
+    {
+     "t": 12.9,
+     "kind": "consult_start",
+     "session": "L45",
+     "consult": "c-7",
+     "progress_token": true
+    },
+    {
+     "t": 13,
+     "kind": "tools_list",
+     "session": "N10",
+     "has_review_codeword": false
+    },
+    {
+     "t": 13,
+     "kind": "consult_start",
+     "session": "N10",
+     "consult": "c-8",
+     "progress_token": true
+    },
+    {
+     "t": 13.7,
+     "kind": "tools_list",
+     "session": "X1",
+     "has_review_codeword": false
+    },
+    {
+     "t": 13.7,
+     "kind": "consult_start",
+     "session": "X1",
+     "consult": "c-9",
+     "progress_token": true
+    },
+    {
+     "t": 17.7,
+     "kind": "consult_done",
+     "consult": "c-9",
+     "seconds": 4
+    },
+    {
+     "t": 17.7,
+     "kind": "delivered",
+     "session": "X1",
+     "consult": "c-9",
+     "held_s": 4,
+     "progress_sent": 0
+    },
+    {
+     "t": 20.7,
+     "kind": "tools_list",
+     "session": "X2",
+     "has_review_codeword": false
+    },
+    {
+     "t": 24,
+     "kind": "tools_list",
+     "session": "X2",
+     "has_review_codeword": false
+    },
+    {
+     "t": 24,
+     "kind": "cache_hit",
+     "session": "X2",
+     "consult": "c-9"
+    },
+    {
+     "t": 132.6,
+     "kind": "consult_done",
+     "consult": "c-6",
+     "seconds": 120
+    },
+    {
+     "t": 132.6,
+     "kind": "delivered",
+     "session": "L2",
+     "consult": "c-6",
+     "held_s": 120,
+     "progress_sent": 3
+    },
+    {
+     "t": 300.4,
+     "kind": "call_cancelled",
+     "session": "J1",
+     "consult": "c-5",
+     "held_s": 288
+    },
+    {
+     "t": 301.8,
+     "kind": "tools_list",
+     "session": "J2",
+     "has_review_codeword": false
+    },
+    {
+     "t": 304.3,
+     "kind": "tools_list",
+     "session": "J2",
+     "has_review_codeword": false
+    },
+    {
+     "t": 304.3,
+     "kind": "join",
+     "session": "J2",
+     "consult": "c-5"
+    },
+    {
+     "t": 311.7,
+     "kind": "ceiling",
+     "session": "C1",
+     "consult": "c-4",
+     "after_s": 300
+    },
+    {
+     "t": 611.2,
+     "kind": "consult_done",
+     "consult": "c-1",
+     "seconds": 600
+    },
+    {
+     "t": 611.2,
+     "kind": "delivered",
+     "session": "L10",
+     "consult": "c-1",
+     "held_s": 600,
+     "progress_sent": 19
+    },
+    {
+     "t": 611.4,
+     "kind": "consult_done",
+     "consult": "c-3",
+     "seconds": 600
+    },
+    {
+     "t": 611.4,
+     "kind": "delivered",
+     "session": "D10",
+     "consult": "c-3",
+     "held_s": 600,
+     "progress_sent": 19
+    },
+    {
+     "t": 611.7,
+     "kind": "consult_done",
+     "consult": "c-4",
+     "seconds": 600
+    },
+    {
+     "t": 613,
+     "kind": "consult_done",
+     "consult": "c-8",
+     "seconds": 600
+    },
+    {
+     "t": 613,
+     "kind": "delivered",
+     "session": "N10",
+     "consult": "c-8",
+     "held_s": 600,
+     "progress_sent": 0
+    },
+    {
+     "t": 615.2,
+     "kind": "tools_list",
+     "session": "C2",
+     "has_review_codeword": false
+    },
+    {
+     "t": 1811.4,
+     "kind": "consult_done",
+     "consult": "c-2",
+     "seconds": 1800
+    },
+    {
+     "t": 1811.4,
+     "kind": "delivered",
+     "session": "L30",
+     "consult": "c-2",
+     "held_s": 1800,
+     "progress_sent": 59
+    },
+    {
+     "t": 1812.4,
+     "kind": "consult_done",
+     "consult": "c-5",
+     "seconds": 1800
+    },
+    {
+     "t": 1812.4,
+     "kind": "delivered",
+     "session": "J2",
+     "consult": "c-5",
+     "held_s": 1508,
+     "progress_sent": 50
+    },
+    {
+     "t": 2712.9,
+     "kind": "consult_done",
+     "consult": "c-7",
+     "seconds": 2700
+    },
+    {
+     "t": 2712.9,
+     "kind": "delivered",
+     "session": "L45",
+     "consult": "c-7",
+     "held_s": 2700,
+     "progress_sent": 89
+    }
+   ]
+  },
+  "flagged": {
+   "S1": 136.6
+  }
+ }
+}
