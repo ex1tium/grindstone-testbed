@@ -56,7 +56,7 @@ const { client } = await connectAhp(`ws://127.0.0.1:8741/?tkn=${controlToken}`, 
 const CONFIGURED = { MCP_TOOL_TIMEOUT: String(3 * 3600 * 1000) };  // above the 2-hour ceiling; idle window left at its default
 
 const sessions = {};
-async function session(name, { delay, progress = P, ceiling = 150 * M, env = CONFIGURED, consultUrl, workspace } = {}) {
+async function session(name, { delay, progress = P, ceiling = 60 * M, env = CONFIGURED, consultUrl, workspace } = {}) {
   const uri = `ahp-session:/${randomUUID()}`;
   const { token } = await post('/admin/tokens', { session: name, delay_s: delay ?? 0, progress_s: progress, ceiling_s: ceiling, ...(consultUrl ? { consult_url: consultUrl } : {}) });
   const ws = workspace ?? join(root, name);
@@ -70,7 +70,7 @@ async function session(name, { delay, progress = P, ceiling = 150 * M, env = CON
 }
 const ASK = (q) => `Call the ask tool of the grindstone MCP server with the question "${q}". It may take a very long time to answer; wait for it. `
   + 'Then reply with exactly one line: ANSWER: <its answer>, or WAITING if its status is consult_ceiling, or FAILED: <the error> if the call fails.';
-async function turn(x, prompt, ms = (150 * M + 600) * 1000) {
+async function turn(x, prompt, ms = (60 * M + 600) * 1000) {
   const id = startTurn(client, x.s.chat, prompt);
   const startedAt = now();
   const end = await x.w.until(turnEnded(id), ms).catch((e) => ({ type: `harness timeout: ${e.message}` }));
@@ -97,7 +97,7 @@ const liveness = setInterval(async () => {
 }, 5000);
 
 // --- the experiments -------------------------------------------------------------------------------------------
-const exp1 = (on('exp1') ? [2, 10, 30, 120] : []).map(async (mins) => {
+const exp1 = (on('exp1') ? [2, 10, 30, 45] : []).map(async (mins) => {
   const x = await session(`L${mins}`, { delay: mins * M });
   note(`exp1:L${mins}`, await turn(x, ASK(`long question ${mins}`)));
   x.done = true;

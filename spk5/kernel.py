@@ -145,7 +145,11 @@ class Bearer:
 
     async def __call__(self, scope: Any, receive: Any, send: Any) -> None:
         if scope["type"] == "http":
-            token = dict(scope["headers"]).get(b"authorization", b"").decode().removeprefix("Bearer ")
+            headers = dict(scope["headers"])
+            token = headers.get(b"authorization", b"").decode().removeprefix("Bearer ")
+            if token in TOKENS and TOKENS[token]["session"].startswith("K"):
+                log("http", session=TOKENS[token]["session"], method=scope["method"], accept=headers.get(b"accept", b"").decode()[:60],
+                    protocol=headers.get(b"mcp-protocol-version", b"").decode())
             if token not in TOKENS:
                 await send({"type": "http.response.start", "status": 401, "headers": []})
                 await send({"type": "http.response.body", "body": b""})
