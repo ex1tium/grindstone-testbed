@@ -1,0 +1,160 @@
+{
+ "passesClean": true,
+ "failsEach": true,
+ "rows": [
+  [
+   "none",
+   0
+  ],
+  [
+   "no token",
+   1
+  ],
+  [
+   "no CLAUDE_CONFIG_DIR",
+   1
+  ],
+  [
+   "CLAUDE_CODE_USE_BEDROCK",
+   1
+  ],
+  [
+   "CLAUDE_CODE_USE_VERTEX",
+   1
+  ],
+  [
+   "CLAUDE_CODE_USE_FOUNDRY",
+   1
+  ],
+  [
+   "CLAUDE_CODE_USE_ANTHROPIC_AWS",
+   1
+  ],
+  [
+   "CLAUDE_CODE_USE_MANTLE",
+   1
+  ],
+  [
+   "ANTHROPIC_AUTH_TOKEN",
+   1
+  ],
+  [
+   "ANTHROPIC_API_KEY",
+   1
+  ],
+  [
+   "AWS_BEARER_TOKEN_BEDROCK",
+   1
+  ],
+  [
+   "ANTHROPIC_FOUNDRY_API_KEY",
+   1
+  ],
+  [
+   "ANTHROPIC_FOUNDRY_AUTH_TOKEN",
+   1
+  ],
+  [
+   "ANTHROPIC_AWS_API_KEY",
+   1
+  ],
+  [
+   "ANTHROPIC_BASE_URL",
+   1
+  ],
+  [
+   "ANTHROPIC_AWS_BASE_URL",
+   1
+  ],
+  [
+   "ANTHROPIC_BEDROCK_BASE_URL",
+   1
+  ],
+  [
+   "ANTHROPIC_BEDROCK_MANTLE_BASE_URL",
+   1
+  ],
+  [
+   "ANTHROPIC_FOUNDRY_BASE_URL",
+   1
+  ],
+  [
+   "ANTHROPIC_VERTEX_BASE_URL",
+   1
+  ],
+  [
+   "CLAUDE_CODE_PROVIDER_MANAGED_BY_HOST",
+   1
+  ],
+  [
+   "CLAUDE_CODE_SKIP_BEDROCK_AUTH",
+   1
+  ],
+  [
+   "CLAUDE_CODE_SKIP_VERTEX_AUTH",
+   1
+  ],
+  [
+   "CLAUDE_CODE_SKIP_FOUNDRY_AUTH",
+   1
+  ],
+  [
+   "CLAUDE_CODE_SKIP_ANTHROPIC_AWS_AUTH",
+   1
+  ],
+  [
+   "CLAUDE_CODE_SKIP_MANTLE_AUTH",
+   1
+  ],
+  [
+   "ANTHROPIC_PROFILE",
+   1
+  ],
+  [
+   "ANTHROPIC_FEDERATION_RULE_ID",
+   1
+  ],
+  [
+   "ANTHROPIC_ORGANIZATION_ID",
+   1
+  ],
+  [
+   "CLAUDE_CODE_OAUTH_REFRESH_TOKEN",
+   1
+  ],
+  [
+   "/etc/claude-code/managed-settings.json",
+   1
+  ],
+  [
+   "/etc/claude-code/managed-mcp.json",
+   1
+  ],
+  [
+   "/etc/claude-code/managed-settings.d",
+   1
+  ],
+  [
+   "settings.json apiKeyHelper",
+   1
+  ],
+  [
+   "settings.json env",
+   1
+  ],
+  [
+   "settings.json forceLoginMethod",
+   1
+  ],
+  [
+   "stored login",
+   1
+  ]
+ ],
+ "behaviour": {
+  "tokenOnly": "end_turn: OK",
+  "withBogusApiKey": "error: {\"code\":-32000,\"message\":\"Authentication required\"}",
+  "withUnroutableBaseUrl": "error: timeout 90 s"
+ },
+ "note": "behaviour.tokenOnly is from the first run at about 16:20 UTC; this file was rewritten by a second run at 16:28, when the subscription session limit was hit, so its own tokenOnly call returned a rate-limit error. The other two rows are identical in both runs."
+}

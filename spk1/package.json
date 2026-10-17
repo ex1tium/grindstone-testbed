@@ -1,0 +1,11 @@
+{
+  "name": "spk1",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@ahpd/sdk": "0.12.0",
+    "@ahpd/agent-acp": "0.12.0",
+    "@agentclientprotocol/claude-agent-acp": "0.93.0",
+    "@microsoft/agent-host-protocol": "1.0.0"
+  }
+}
