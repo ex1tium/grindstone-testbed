@@ -1,0 +1,22 @@
+{
+ "events": 61,
+ "verdicts": {
+  "ok": 61
+ },
+ "turnNumbersOnChat": [
+  1
+ ],
+ "attacks": {
+  "replay": "replayed",
+  "forged": "forged",
+  "wrongKey": "forged",
+  "sameSeqNewId": "out of order"
+ },
+ "latencyMs": {
+  "toolCalls": 4,
+  "min": 2,
+  "max": 5,
+  "mean": 3.3
+ },
+ "pass": true
+}

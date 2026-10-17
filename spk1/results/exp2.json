@@ -1,0 +1,53 @@
+{
+ "phase1": {
+  "A": "{\"id\":\"4979bd1e-b10f-444f-9e71-b9b92b61931f:2\",\"kind\":\"markdown\",\"content\":\"\"}",
+  "B": "{\"id\":\"54c5bb00-d71a-458f-bcaa-ab920c363cdc:2\",\"kind\":\"markdown\",\"content\":\"\"}"
+ },
+ "phase2": {
+  "A": "{\"id\":\"5f61475b-822e-49fa-99a7-da7602c06e4b:1\",\"kind\":\"markdown\",\"content\":\"\"}",
+  "B": "{\"id\":\"00808aba-2c10-46f3-a177-360bf7d74ad7:1\",\"kind\":\"markdown\",\"content\":\"\"}"
+ },
+ "server": {
+  "calls": [
+   {
+    "tool": "whoami",
+    "session": "A",
+    "t": 1792256500.5249364
+   },
+   {
+    "tool": "whoami",
+    "session": "B",
+    "t": 1792256500.6193705
+   },
+   {
+    "tool": "whoami",
+    "session": "B",
+    "t": 1792256502.6247137
+   }
+  ],
+  "refused": [
+   {
+    "method": "POST",
+    "known": true,
+    "t": 1792256502.711368
+   }
+  ]
+ },
+ "toolCalls": {
+  "A": [
+   "ToolSearch",
+   "mcp__grindstone__whoami",
+   "mcp__grindstone__whoami"
+  ],
+  "B": [
+   "ToolSearch",
+   "mcp__grindstone__whoami",
+   "mcp__grindstone__whoami"
+  ]
+ },
+ "acpLog": {
+  "A": [],
+  "B": []
+ },
+ "pass": true
+}

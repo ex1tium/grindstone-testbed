@@ -1,0 +1,28 @@
+import { mkdtempSync, existsSync, readFileSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
+import { randomBytes, randomUUID } from 'node:crypto';
+import { startHost, SESSIONS, workspaceFor, sessionId } from './host.mjs';
+import { connectAhp, watch, openSession, startTurn, turnEnded, answerConfirmations } from './control.mjs';
+
+const root = mkdtempSync(join(tmpdir(), 'spk1-workspaces-'));
+const controlToken = randomBytes(24).toString('hex');
+const { listener } = await startHost({ root, port: 8720, controlToken });
+const { client, init } = await connectAhp(`ws://127.0.0.1:8720/?tkn=${controlToken}`, 'grindstone-control');
+console.log('negotiated', init.protocolVersion, 'snapshots', init.snapshots?.length);
+const ws = workspaceFor(root, 'run-1');
+const uri = `ahp-session:/${randomUUID()}`;
+SESSIONS.set(sessionId(uri), { home: mkdtempSync(join(tmpdir(), 'spk1-home-')), configDir: mkdtempSync(join(tmpdir(), 'spk1-cfg-')), claudeToken: process.env.GRINDSTONE_CLAUDE_OAUTH_TOKEN, log: (l) => console.error('[acp]', l) });
+const t0 = Date.now();
+const s = await openSession(client, uri, ws);
+console.log('session', s.uri, 'chat', s.chat, 'keys', Object.keys(s.state));
+const w = watch(client, s.chat);
+const stop = answerConfirmations(client, s.chat, w, () => ({ approve: true }));
+const turnId = startTurn(client, s.chat, 'Create hello.txt containing exactly: hi from the host. Then reply DONE.');
+const end = await w.until(turnEnded(turnId), 60000);
+console.log('turn end', end.type, 'ms', Date.now() - t0, 'file', existsSync(join(ws, 'hello.txt')) ? readFileSync(join(ws, 'hello.txt'), 'utf8').trim() : null);
+console.log('action types', [...new Set(w.actions.map((x) => x.action.type))]);
+console.log('ready', JSON.stringify(w.actions.find((x) => x.action.type === 'chat/toolCallReady')?.action).slice(0, 900));
+console.log('sample', JSON.stringify(w.actions.filter((x) => /delta|responsePart|toolCall/.test(x.action.type)).slice(0, 4).map((x) => x.action)).slice(0, 1500));
+await client.shutdown(); await listener.close?.();
+process.exit(0);

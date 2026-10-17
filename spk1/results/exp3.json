@@ -1,0 +1,41 @@
+{
+ "tools": [
+  "whoami",
+  "report"
+ ],
+ "before": {
+  "session": "s1",
+  "task": "T-1",
+  "run": "R-1",
+  "capability": "implement"
+ },
+ "after_revoke": "refused: MCPError: Server returned an error response",
+ "forged": "refused: MCPError",
+ "server_log": {
+  "calls": [
+   {
+    "tool": "whoami",
+    "session": "s1",
+    "t": 1792256087.3389094
+   }
+  ],
+  "refused": [
+   {
+    "method": "POST",
+    "known": true,
+    "t": 1792256087.5011327
+   },
+   {
+    "method": "POST",
+    "known": false,
+    "t": 1792256087.519985
+   },
+   {
+    "method": "POST",
+    "known": false,
+    "t": 1792256087.52224
+   }
+  ]
+ },
+ "pass": true
+}

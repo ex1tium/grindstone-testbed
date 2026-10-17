@@ -1,0 +1,45 @@
+{
+ "protocol": {
+  "control": "1.0.0",
+  "viewer": "1.0.0"
+ },
+ "permissionEvent": {
+  "seenByControl": true,
+  "tool": "Write first.txt",
+  "options": [
+   "allow-once",
+   "allow-with-updates",
+   "reject"
+  ]
+ },
+ "viewerAnswer": {
+  "dispatchError": null,
+  "confirmedWithin3s": false,
+  "fileExists": false,
+  "viewerNotices": []
+ },
+ "controlAnswer": {
+  "turnEnd": "chat/turnComplete",
+  "file": "one"
+ },
+ "steering": {
+  "turnStartedSeenByControl": true,
+  "turnEnd": "chat/turnComplete",
+  "file": "steered"
+ },
+ "transcript": {
+  "controlActions": 37,
+  "viewerActions": 38,
+  "viewerMissing": [],
+  "maxLagMs": 2
+ },
+ "grantsAskedOfViewer": [
+  "config:settings",
+  "session:state",
+  "chat:turns",
+  "chat:answer",
+  "chat:send"
+ ],
+ "usersDirectory": true,
+ "pass": true
+}

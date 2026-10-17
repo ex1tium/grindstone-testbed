@@ -1,0 +1,36 @@
+[
+ {
+  "label": "A control: adapter defaults (settingSources user, project, local)",
+  "answer": [
+   "CODEWORD: PINEAPPLE-42",
+   "SKILLS: evil-skill, dataviz, update-config, keybindings-help, code-review, simplify, fewer-permission-prompts, loop, schedule, claude-api, workflow-authoring, run, plugin-authoring, init, security-review",
+   "ENV: [leaked-from-project-settings]",
+   "MCP: NONE"
+  ],
+  "markers": [
+   "hook-PreToolUse",
+   "hook-SessionStart",
+   "mcp-started"
+  ]
+ },
+ {
+  "label": "B launcher: settingSources []",
+  "answer": [
+   "CODEWORD: NONE",
+   "SKILLS: dataviz, update-config, keybindings-help, code-review, simplify, fewer-permission-prompts, loop, schedule, claude-api, workflow-authoring, run, plugin-authoring, init, security-review",
+   "ENV: []",
+   "MCP: NONE"
+  ],
+  "markers": []
+ },
+ {
+  "label": "C launcher: settingSources [user], private config dir with one read-only skill",
+  "answer": [
+   "CODEWORD: NONE",
+   "SKILLS: grindstone-review, dataviz, update-config, keybindings-help, code-review, simplify, fewer-permission-prompts, loop, schedule, claude-api, workflow-authoring, run, plugin-authoring, init, security-review",
+   "ENV: []",
+   "MCP: NONE"
+  ],
+  "markers": []
+ }
+]

@@ -1,0 +1,33 @@
+{
+ "beforeKill": {
+  "agents": 3
+ },
+ "afterKill": {
+  "agentsStillRunning": [
+   "4138     1 /home/user/grindstone-testbed/spk1/node_modules/@anthropic-ai/claude-agent-sdk-linux-x64/claude --output-form"
+  ]
+ },
+ "afterRestart": {
+  "rootKeys": [
+   "agents",
+   "activeSessions",
+   "config",
+   "_meta"
+  ],
+  "sessions": "0",
+  "listSessions": "{\"items\":[]}",
+  "oldSessionSubscribe": "error: RPC error -32001: No agent for session ahp-session:/8c8d679f-1cfc-4721-8547-956e2300c1d7"
+ },
+ "newSession": {
+  "end": "chat/turnComplete",
+  "reply": "The folder had one file, `done.txt`, before I did anything. The `ls` I ran first already showed it (5 bytes). Since it already existed, I didn't create or change it.\n\nFiles in `/tmp/spk1-workspaces-ZS4pUl/run-1`:\n- `done.txt`"
+ },
+ "workspace": {
+  "done.txt": "done"
+ },
+ "orphansAfter30s": [
+  "4229  4207 /opt/node-v24.22.0/bin/node /home/user/grindstone-testbed/spk1/src/launcher.mjs",
+  "4236  4229 /opt/node-v24.22.0/bin/node /home/user/grindstone-testbed/spk1/node_modules/@agentclientprotocol/claude-agent",
+  "4250  4236 /home/user/grindstone-testbed/spk1/node_modules/@anthropic-ai/claude-agent-sdk-linux-x64/claude --output-form"
+ ]
+}
