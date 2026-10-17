@@ -23,6 +23,7 @@ function agentEnv(session) {
     CLAUDE_CODE_OAUTH_TOKEN: session.claudeToken,
     GRINDSTONE_ACP_OPTIONS: JSON.stringify(session.options ?? {}),
     ...(session.timingLog ? { SPK1_TIMING_LOG: session.timingLog } : {}),
+    ...(session.env ?? {}),
     // A TLS-intercepting egress (the cloud spike environment) needs its CA; production sets none.
     ...(process.env.NODE_EXTRA_CA_CERTS ? { NODE_EXTRA_CA_CERTS: process.env.NODE_EXTRA_CA_CERTS } : {}),
   };
